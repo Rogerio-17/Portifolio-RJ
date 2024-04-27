@@ -13,7 +13,9 @@ export default function Home() {
             px="1rem"
         >
             <ContentHome />
-            <About />
+            <Flex bg="blue.900" position="relative" w="100vw">
+                <About />
+            </Flex>
         </Flex>
     )
 }

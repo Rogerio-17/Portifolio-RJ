@@ -11,6 +11,9 @@ export const theme = extendTheme({
 
     styles: {
         global: {
+            '::-webkit-scrollbar': {
+                display: 'none',
+            },
             html: {
                 scrollBehavior: 'smooth',
             },

@@ -1,8 +1,9 @@
-import { Flex, Grid, Text } from '@chakra-ui/react'
+import { GitHubIcon } from '@/icons/github'
+import { Flex, Grid, Img, Text } from '@chakra-ui/react'
 
 export default function About() {
     return (
-        <Grid templateColumns="2fr 1fr" w="100%" h="85vh">
+        <Grid templateColumns="2fr 1fr" w="100%">
             <Flex lineHeight="2.8rem">
                 <Flex flexDirection="column" marginTop="10rem">
                     <Text fontSize="1.5rem">Olá, eu sou o</Text>
@@ -18,6 +19,7 @@ export default function About() {
                     </Text>
                     <Text fontSize="1.2rem">Desenvolvedor front-end</Text>
                 </Flex>
+                <Flex></Flex>
             </Flex>
             <Flex></Flex>
         </Grid>
