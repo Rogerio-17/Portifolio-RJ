@@ -18,11 +18,12 @@ export const theme = extendTheme({
             body: {
                 overflowX: 'hidden',
                 background: 'blue.900',
+                color: 'white',
             },
 
             a: {
                 textDecoration: 'none !important',
-                cursor: 'not-allowed !important',
+                cursor: 'pointer !important',
             },
         },
     },

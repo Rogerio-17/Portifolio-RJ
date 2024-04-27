@@ -1,5 +1,19 @@
-import { Link } from '@chakra-ui/react'
+import { Flex, Link, Text } from '@chakra-ui/react'
+import ContentHome from './contentHome'
+import About from './about'
 
 export default function Home() {
-    return <Link color="gray">Inciandoooooooo projeto</Link>
+    return (
+        <Flex
+            flexDirection="column"
+            w="1280px"
+            maxW="1280px"
+            alignItems="center"
+            margin="0 auto"
+            px="1rem"
+        >
+            <ContentHome />
+            <About />
+        </Flex>
+    )
 }
