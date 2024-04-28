@@ -32,7 +32,7 @@ export function Header() {
                             transition: 'filter 0.3s ease',
                         }}
                     >
-                        About
+                        Sobre
                     </Link>
                     <Link
                         _hover={{
@@ -48,7 +48,7 @@ export function Header() {
                             transition: 'filter 0.3s ease',
                         }}
                     >
-                        Contact
+                        Contatos
                     </Link>
                 </Flex>
 
