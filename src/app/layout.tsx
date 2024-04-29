@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Providers } from './providers'
 import { fonts } from '@/styles/themes/fonts'
-import { Header } from '@/components/header'
+import { Header } from '@/components/Header'
 
 export const metadata: Metadata = {
     title: 'Portifolio RJ',

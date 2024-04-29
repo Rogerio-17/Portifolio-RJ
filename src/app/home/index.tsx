@@ -1,6 +1,7 @@
 import { Flex, Link, Text } from '@chakra-ui/react'
 import ContentHome from './contentHome'
 import About from './about'
+import { Projets } from './projects'
 
 export default function Home() {
     return (
@@ -13,8 +14,9 @@ export default function Home() {
             px="1rem"
         >
             <ContentHome />
-            <Flex bg="blue.900" position="relative" w="100vw">
+            <Flex bg="blue.900" position="relative" w="100vw" flexDirection="column">
                 <About />
+                <Projets />
             </Flex>
         </Flex>
     )
