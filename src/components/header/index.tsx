@@ -40,6 +40,7 @@ export function Header() {
                             filter: 'brightness(0.90)',
                             transition: 'filter 0.3s ease',
                         }}
+                        href="/#projects"
                     >
                         Projetos
                     </Link>

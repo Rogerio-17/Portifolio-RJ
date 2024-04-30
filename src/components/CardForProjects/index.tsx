@@ -5,12 +5,12 @@ export function CardForProjects() {
     return (
         <Flex
             w="300px"
-            bg="blue.600"
+            bg="rgba(236, 233, 233, 0.041)"
             boxShadow="0px 4px 4px 0px rgba(0, 0, 0, 0.35)"
             borderRadius="10px"
             overflow="hidden"
             flexDirection="column"
-            p="0.4rem"
+            p="0.6rem"
         >
             <Image src={ignite.src} w="100%" h="170px" borderRadius="8px" mb="0.5rem" />
             <Text as="h3" fontSize="1.3rem" fontWeight="bold" mb="0.3rem">
