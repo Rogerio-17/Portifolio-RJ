@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Providers } from './providers'
 import { fonts } from '@/styles/themes/fonts'
 import { Header } from '@/components/Header'
+import { Footer } from '@/components/Footer'
 
 export const metadata: Metadata = {
     title: 'Portifolio RJ',
@@ -19,6 +20,7 @@ export default function RootLayout({
             <body>
                 <Header />
                 <Providers>{children}</Providers>
+                <Footer />
             </body>
         </html>
     )

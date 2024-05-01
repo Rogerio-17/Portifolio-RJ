@@ -6,14 +6,7 @@ import { Contact } from './contact'
 
 export default function Home() {
     return (
-        <Flex
-            flexDirection="column"
-            w="1280px"
-            maxW="1280px"
-            alignItems="center"
-            margin="0 auto"
-            px="1rem"
-        >
+        <Flex flexDirection="column" alignItems="center" margin="0 auto" px="1rem">
             <ContentHome />
             <Flex bg="blue.900" position="relative" w="100vw" flexDirection="column">
                 <About />

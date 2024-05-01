@@ -1,6 +1,7 @@
 import { Flex, Image, Link } from '@chakra-ui/react'
 import { ButtonContainer } from '../ButtonContainer'
 import logo from '@/assets/logo.png'
+import { DownloadIcon } from '@/icons/download'
 
 export function Header() {
     return (
@@ -54,7 +55,14 @@ export function Header() {
                     </Link>
                 </Flex>
 
-                <ButtonContainer> Download CV</ButtonContainer>
+                <ButtonContainer
+                    display="flex"
+                    alignItems="center"
+                    justifyContent="center"
+                    gap="0.2rem"
+                >
+                    <DownloadIcon w="1.2rem" h="1.2rem" /> Download CV
+                </ButtonContainer>
             </Flex>
         </Flex>
     )

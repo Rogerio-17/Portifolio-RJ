@@ -6,7 +6,7 @@ import { InstagramIcon } from '@/icons/instagram'
 
 export default function ContentHome() {
     return (
-        <Grid templateColumns="2fr 1fr" w="100%" h="90vh">
+        <Grid templateColumns="2fr 1fr" h="90vh" w="1280px" maxW="1280px">
             <Flex lineHeight="2.8rem" position="absolute">
                 <Particle />
                 <Flex flexDirection="column" marginTop="14rem">
