@@ -10,7 +10,7 @@ export function Footer() {
                 <Flex h="150px" gap="1rem" flexDirection="column">
                     <Flex w="100%" justifyContent="space-between">
                         <Text fontSize="1.5rem" fontWeight="bold">
-                            Rogerio Jose Martins Filho
+                            Rogério José Martins Filho
                         </Text>
                         <Text fontSize="1.5rem" fontWeight="bold">
                             Sociais
@@ -48,7 +48,7 @@ export function Footer() {
                 >
                     <Text fontSize="0.8rem">
                         © Direitos Autorais 2024. Feito por{' '}
-                        <Link href="/" textDecoration="underline !important">
+                        <Link href="/#home" textDecoration="underline !important">
                             Rogério José
                         </Link>
                     </Text>

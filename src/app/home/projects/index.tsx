@@ -1,4 +1,5 @@
 import { CardForProjects } from '@/components/CardForProjects'
+import { projects } from '@/data/projects'
 import { Box, Flex, Heading, Text } from '@chakra-ui/react'
 
 export function Projets() {
@@ -28,10 +29,9 @@ export function Projets() {
                 omnis et facere ab consectetur tempore doloribus.
             </Text>
             <Flex flexWrap="wrap" gap="1rem" mt="3rem">
-                <CardForProjects />
-                <CardForProjects />
-                <CardForProjects />
-                <CardForProjects />
+                {projects.map((project) => (
+                    <CardForProjects key={project.id} project={project} />
+                ))}
             </Flex>
         </Flex>
     )

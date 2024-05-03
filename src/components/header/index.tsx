@@ -6,13 +6,7 @@ import { DownloadIcon } from '@/icons/download'
 export function Header() {
     return (
         <Flex w="100%" justifyContent="center" py="1.2rem">
-            <Flex
-                justifyContent="space-between"
-                alignItems="center"
-                w="1280px"
-                maxW="1280px"
-                px="1rem"
-            >
+            <Flex justifyContent="space-between" alignItems="center" w="85vw" px="1rem">
                 <Link href="/">
                     <Image src={logo.src} w="180px" h="50px" />
                 </Link>

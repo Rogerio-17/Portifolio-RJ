@@ -1,7 +1,23 @@
-import { Button, Flex, Image, Text } from '@chakra-ui/react'
+import { Button, Flex, Image, Link, Text } from '@chakra-ui/react'
 import ignite from '@/assets/ignite_shop.png'
+import { ArrowLeftIcon } from '@/icons/arrowLeft'
+import NextLink from 'next/link'
+import { ArrowTopRightIcon } from '@/icons/arrowTopRight'
+import { RocketIcon } from '@/icons/rocket'
 
-export function CardForProjects() {
+interface cardForProjectsProps {
+    project: {
+        id: string
+        name: string
+        imgUrl: string
+        description: string
+        tools: string[]
+        linkRepository: string
+        linkDeploy: string
+    }
+}
+
+export function CardForProjects({ project }: cardForProjectsProps) {
     return (
         <Flex
             w="300px"
@@ -12,9 +28,9 @@ export function CardForProjects() {
             flexDirection="column"
             p="0.6rem"
         >
-            <Image src={ignite.src} w="100%" h="170px" borderRadius="8px" mb="0.5rem" />
+            <Image src={project.imgUrl} w="100%" h="170px" borderRadius="8px" mb="0.5rem" />
             <Text as="h3" fontSize="1.3rem" fontWeight="bold" mb="0.3rem">
-                Ignite Shop
+                {project.name}
             </Text>
             <Text
                 lineHeight="1rem"
@@ -22,29 +38,53 @@ export function CardForProjects() {
                 fontSize="0.9rem"
                 textAlign="justify"
                 color="gray"
+                sx={{
+                    display: '-webkit-box',
+                    overflow: 'hidden',
+                    WebkitBoxOrient: 'vertical',
+                    WebkitLineClamp: 4, // número de linhas
+                }}
             >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed consequuntur molestias
-                eum voluptate impedit sit quasi temporibu.
+                {project.description}
             </Text>
             <Flex justifyContent="space-between" mt="1.5rem">
-                <Button
+                <Link
+                    as={NextLink}
                     bg="rgba(153, 153, 153, 0.2)"
                     _hover={{
                         filter: 'brightness(0.85)',
                         transition: 'filter 0.3s ease',
                     }}
+                    display="flex"
+                    alignItems="center"
+                    justifyContent="center"
+                    gap="0.5rem"
+                    px="1rem"
+                    py="0.6rem"
+                    borderRadius="8px"
+                    href={`project_details?projectId=${project.id}`}
                 >
-                    Ver detalhes
-                </Button>
-                <Button
+                    Ver detalhes <ArrowTopRightIcon w="20px" h="20px" />
+                </Link>
+
+                <Link
                     bg="blue.200"
                     _hover={{
                         filter: 'brightness(0.85)',
                         transition: 'filter 0.3s ease',
                     }}
+                    display="flex"
+                    alignItems="center"
+                    justifyContent="center"
+                    gap="0.5rem"
+                    px="1rem"
+                    py="0.6rem"
+                    borderRadius="8px"
+                    target="_blank"
+                    href={project.linkDeploy}
                 >
-                    Deploy
-                </Button>
+                    Deploy <RocketIcon w="20px" h="20px" />
+                </Link>
             </Flex>
         </Flex>
     )
