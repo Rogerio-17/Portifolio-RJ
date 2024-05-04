@@ -4,7 +4,6 @@ export function LogoIcon(props: IconProps) {
     return (
         <Icon
             xmlns="http://www.w3.org/2000/svg"
-            xlink="http://www.w3.org/1999/xlink"
             width="100"
             viewBox="0 0 240.75 121.750002"
             height="75"

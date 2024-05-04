@@ -1,10 +1,12 @@
 'use client'
-import { useCallback, useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import Particles, { initParticlesEngine } from '@tsparticles/react'
 
 import { loadFull } from 'tsparticles'
+
 export default function Particle() {
     const [init, setInit] = useState(false)
+
     useEffect(() => {
         initParticlesEngine(async (engine: any) => {
             await loadFull(engine)
@@ -13,14 +15,11 @@ export default function Particle() {
         })
     }, [])
 
-    const particlesLoaded = (container: any) => {}
-
     return (
         <>
             {init && (
                 <Particles
                     id="tsparticles"
-                    particlesLoaded={particlesLoaded}
                     style={{
                         zIndex: 1,
                     }}
@@ -36,7 +35,7 @@ export default function Particle() {
                                     enable: true,
                                     mode: 'repulse',
                                 },
-                                resize: true,
+                                resize: {},
                             },
                             modes: {
                                 push: {
@@ -70,11 +69,7 @@ export default function Particle() {
                                 straight: false,
                             },
                             number: {
-                                density: {
-                                    enable: true,
-                                    area: 800,
-                                },
-                                value: 160,
+                                value: 80,
                             },
                             opacity: {
                                 value: 0.5,
