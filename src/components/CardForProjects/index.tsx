@@ -20,7 +20,7 @@ interface cardForProjectsProps {
 export function CardForProjects({ project }: cardForProjectsProps) {
     return (
         <Flex
-            w="300px"
+            w="400px"
             bg="rgba(236, 233, 233, 0.041)"
             boxShadow="0px 4px 4px 0px rgba(0, 0, 0, 0.35)"
             borderRadius="10px"
@@ -28,7 +28,7 @@ export function CardForProjects({ project }: cardForProjectsProps) {
             flexDirection="column"
             p="0.6rem"
         >
-            <Image src={project.imgUrl} w="100%" h="170px" borderRadius="8px" mb="0.5rem" />
+            <Image src={project.imgUrl} w="100%" h="220px" borderRadius="8px" mb="0.5rem" />
             <Text as="h3" fontSize="1.3rem" fontWeight="bold" mb="0.3rem">
                 {project.name}
             </Text>

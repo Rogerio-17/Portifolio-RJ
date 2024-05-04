@@ -4,6 +4,8 @@ import logo from '@/assets/logo.png'
 import { DownloadIcon } from '@/icons/download'
 
 export function Header() {
+    const curriculum = '/pdfs/rogerio_jose.pdf'
+
     return (
         <Flex w="100%" justifyContent="center" py="1.2rem">
             <Flex justifyContent="space-between" alignItems="center" w="85vw" px="1rem">
@@ -50,6 +52,8 @@ export function Header() {
                 </Flex>
 
                 <ButtonContainer
+                    href={curriculum}
+                    download="Rogerio_Jose"
                     display="flex"
                     alignItems="center"
                     justifyContent="center"

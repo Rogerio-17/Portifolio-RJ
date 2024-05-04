@@ -9,9 +9,10 @@ export default function ContentHome() {
         <Grid templateColumns="2fr 1fr" h="90vh" w="1280px" maxW="1280px" id="home">
             <Flex lineHeight="2.8rem" position="absolute">
                 <Particle />
-                <Flex flexDirection="column" marginTop="14rem">
+                <Flex flexDirection="column" marginTop="12rem">
                     <Text fontSize="1.5rem">Olá, eu sou o</Text>
                     <Text
+                        as="span"
                         fontWeight="bold"
                         fontSize="3.5rem"
                         textTransform="uppercase"

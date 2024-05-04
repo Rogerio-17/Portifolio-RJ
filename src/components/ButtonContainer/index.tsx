@@ -1,8 +1,8 @@
-import { Button, ButtonProps } from '@chakra-ui/react'
+import { Link, LinkProps } from '@chakra-ui/react'
 
-export function ButtonContainer({ ...props }: ButtonProps) {
+export function ButtonContainer({ ...props }: LinkProps) {
     return (
-        <Button
+        <Link
             py="0.5rem"
             px="1rem"
             border="2px solid white"
@@ -17,6 +17,6 @@ export function ButtonContainer({ ...props }: ButtonProps) {
             {...props}
         >
             {props.children}
-        </Button>
+        </Link>
     )
 }

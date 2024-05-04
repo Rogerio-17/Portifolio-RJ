@@ -9,9 +9,7 @@ export function Projets() {
             flexDirection="column"
             alignItems="center"
             py="2rem"
-            w="1280px"
-            maxW="1280px"
-            px="1rem"
+            w="85vw"
             margin="auto"
             marginTop="5rem"
         >
@@ -28,7 +26,7 @@ export function Projets() {
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. A aliquam nihil quis odit
                 omnis et facere ab consectetur tempore doloribus.
             </Text>
-            <Flex flexWrap="wrap" gap="1rem" mt="3rem">
+            <Flex flexWrap="wrap" gap="1rem" mt="3rem" justifyContent="center">
                 {projects.map((project) => (
                     <CardForProjects key={project.id} project={project} />
                 ))}

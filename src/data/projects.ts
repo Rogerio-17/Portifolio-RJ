@@ -40,4 +40,58 @@ export const projects = [
         linkRepository: 'https://github.com/Rogerio-17/coffe-delivery',
         linkDeploy: 'https://coffe-delivery-v1.vercel.app/',
     },
+    {
+        id: '3',
+        name: 'Coffe Delivery',
+        imgUrl: coffeDelivery.src,
+        description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eius
+        perspiciatis, non provident saepe nesciunt officia veritatis qui id tempore.
+        Suscipit saepe quod ea eius natus, cum vel reiciendis quibusdam! Lorem ipsum
+        dolor sit amet consectetur adipisicing elit. Ipsum sunt corporis dolore non
+        enim illo veritatis itaque tenetur neque? Impedit quos excepturi maxime
+        dicta architecto placeat quis sed minus iure. Lorem, ipsum dolor sit amet
+        consectetur adipisicing elit. Nulla maxime alias soluta doloremque, odit
+        aliquam ipsam, debitis vero sunt veniam quasi ducimus accusantium facilis,
+        nisi sequi nihil unde quis eius! Lorem ipsum dolor sit amet consectetur,
+        adipisicing elit. Id, eos praesentium. `,
+        tools: ['TypeScript', 'ReactJS', 'NodeJS', 'Styleds components', 'Github'],
+        linkRepository: 'https://github.com/Rogerio-17/coffe-delivery',
+        linkDeploy: 'https://coffe-delivery-v1.vercel.app/',
+    },
+    {
+        id: '4',
+        name: 'Coffe Delivery',
+        imgUrl: coffeDelivery.src,
+        description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eius
+        perspiciatis, non provident saepe nesciunt officia veritatis qui id tempore.
+        Suscipit saepe quod ea eius natus, cum vel reiciendis quibusdam! Lorem ipsum
+        dolor sit amet consectetur adipisicing elit. Ipsum sunt corporis dolore non
+        enim illo veritatis itaque tenetur neque? Impedit quos excepturi maxime
+        dicta architecto placeat quis sed minus iure. Lorem, ipsum dolor sit amet
+        consectetur adipisicing elit. Nulla maxime alias soluta doloremque, odit
+        aliquam ipsam, debitis vero sunt veniam quasi ducimus accusantium facilis,
+        nisi sequi nihil unde quis eius! Lorem ipsum dolor sit amet consectetur,
+        adipisicing elit. Id, eos praesentium. `,
+        tools: ['TypeScript', 'ReactJS', 'NodeJS', 'Styleds components', 'Github'],
+        linkRepository: 'https://github.com/Rogerio-17/coffe-delivery',
+        linkDeploy: 'https://coffe-delivery-v1.vercel.app/',
+    },
+    {
+        id: '5',
+        name: 'Coffe Delivery',
+        imgUrl: coffeDelivery.src,
+        description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eius
+        perspiciatis, non provident saepe nesciunt officia veritatis qui id tempore.
+        Suscipit saepe quod ea eius natus, cum vel reiciendis quibusdam! Lorem ipsum
+        dolor sit amet consectetur adipisicing elit. Ipsum sunt corporis dolore non
+        enim illo veritatis itaque tenetur neque? Impedit quos excepturi maxime
+        dicta architecto placeat quis sed minus iure. Lorem, ipsum dolor sit amet
+        consectetur adipisicing elit. Nulla maxime alias soluta doloremque, odit
+        aliquam ipsam, debitis vero sunt veniam quasi ducimus accusantium facilis,
+        nisi sequi nihil unde quis eius! Lorem ipsum dolor sit amet consectetur,
+        adipisicing elit. Id, eos praesentium. `,
+        tools: ['TypeScript', 'ReactJS', 'NodeJS', 'Styleds components', 'Github'],
+        linkRepository: 'https://github.com/Rogerio-17/coffe-delivery',
+        linkDeploy: 'https://coffe-delivery-v1.vercel.app/',
+    },
 ]
