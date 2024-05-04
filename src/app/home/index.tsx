@@ -1,4 +1,4 @@
-import { Flex, Link, Text } from '@chakra-ui/react'
+import { Flex } from '@chakra-ui/react'
 import ContentHome from './contentHome'
 import About from './about'
 import { Projets } from './projects'

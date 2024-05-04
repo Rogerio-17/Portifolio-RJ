@@ -76,6 +76,10 @@ export function Contact() {
                     justifyContent="center"
                     gap="0.5rem"
                     h="50px"
+                    _hover={{
+                        filter: 'brightness(0.85)',
+                        transition: 'filter 0.3s ease',
+                    }}
                 >
                     ENVIAR
                     <SendIcon w="18px" h="18px" />
