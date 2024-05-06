@@ -1,4 +1,4 @@
-import { CardForProjects } from '@/components/CardForProjects'
+'use client'
 import { SendIcon } from '@/icons/send'
 import {
     Box,
@@ -11,16 +11,64 @@ import {
     Text,
     Textarea,
 } from '@chakra-ui/react'
+import * as zod from 'zod'
+import { useForm } from 'react-hook-form'
+import { zodResolver } from '@hookform/resolvers/zod'
+import emailjs from '@emailjs/browser'
+
+const MesssageSchema = zod.object({
+    personalData: zod.object({
+        name: zod.string().min(1, { message: 'O Campo é obrigatório' }),
+        email: zod
+            .string()
+            .min(1, { message: 'O Campo é obrigatório' })
+            .email({ message: 'O e-mail informado é inválido' })
+            .toLowerCase(),
+        msg: zod.string().min(1, { message: 'O Campo é obrigatório' }),
+    }),
+})
+
+export type OderMessageData = zod.infer<typeof MesssageSchema>
+export type ConfirmOrderForm = OderMessageData
 
 export function Contact() {
+    const confirmOrderForm = useForm<ConfirmOrderForm>({
+        resolver: zodResolver(MesssageSchema),
+    })
+
+    const {
+        handleSubmit,
+        register,
+        formState: { errors },
+    } = confirmOrderForm
+
+    console.log(process.env.PUBLIC_KEY_TEMPLATE_EMAIL)
+
+    function handleSendEmail(data: ConfirmOrderForm) {
+        const templateParams = {
+            from_name: data.personalData.name,
+            mensagem: data.personalData.msg,
+            email: data.personalData.email,
+        }
+
+        emailjs
+            .send('service_8ipi2bs', 'template_16dogpv', templateParams, 'h22JGKcDYMwmBKKrV')
+            .then(() => {
+                alert('Sucesso ao enviar o email.')
+            })
+            .catch(() => {
+                alert('Erro ao enviar email.')
+            })
+    }
     return (
         <Flex
+            as="form"
+            onSubmit={handleSubmit(handleSendEmail)}
             id="projects"
             flexDirection="column"
             alignItems="center"
             py="2rem"
-            w="1280px"
-            maxW="1280px"
+            w="85vw"
             px="1rem"
             margin="auto"
             marginTop="5rem"
@@ -52,11 +100,29 @@ export function Contact() {
             >
                 <Box>
                     <FormLabel>Nome</FormLabel>
-                    <Input placeholder="Digite seu nome" style={{ opacity: 0.7 }} />
+                    <Input
+                        placeholder="Digite seu nome"
+                        style={{ opacity: 0.7 }}
+                        {...register('personalData.name')}
+                    />
+                    {errors.personalData?.name?.message && (
+                        <Text fontSize="0.7rem" color="red" marginTop="0.2rem">
+                            {errors.personalData?.name?.message}
+                        </Text>
+                    )}
                 </Box>
                 <Box>
                     <FormLabel>E-mail</FormLabel>
-                    <Input placeholder="Seuemail@mail.com" style={{ opacity: 0.7 }} />
+                    <Input
+                        placeholder="Seuemail@mail.com"
+                        style={{ opacity: 0.7 }}
+                        {...register('personalData.email')}
+                    />
+                    {errors.personalData?.email?.message && (
+                        <Text fontSize="0.7rem" color="red" marginTop="0.2rem">
+                            {errors.personalData?.email?.message}
+                        </Text>
+                    )}
                 </Box>
 
                 <Box>
@@ -66,10 +132,17 @@ export function Contact() {
                         resize="none"
                         height="200px"
                         style={{ opacity: 0.7 }}
+                        {...register('personalData.msg')}
                     />
+                    {errors.personalData?.msg?.message && (
+                        <Text fontSize="0.7rem" color="red" marginTop="0.2rem">
+                            {errors.personalData?.msg?.message}
+                        </Text>
+                    )}
                 </Box>
 
                 <Button
+                    type="submit"
                     bg="blue.200"
                     display="flex"
                     alignItems="center"
