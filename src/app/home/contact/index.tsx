@@ -47,7 +47,7 @@ export function Contact() {
     function handleSendEmail(data: ConfirmOrderForm) {
         const templateParams = {
             from_name: data.personalData.name,
-            mensagem: data.personalData.msg,
+            message: data.personalData.msg,
             email: data.personalData.email,
         }
 
@@ -60,6 +60,8 @@ export function Contact() {
                 alert('Erro ao enviar email.')
             })
     }
+
+    // -------------- Cria um interrruptor com opção de email e whats para envio de mensagens -----------------
     return (
         <Flex
             as="form"

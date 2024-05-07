@@ -1,5 +1,8 @@
 import ignite from '@/assets/ignite_shop.png'
 import coffeDelivery from '@/assets/coffe_delivery.png'
+import nlwExpert from '@/assets/nlw_expert.png'
+import igniteTimer from '@/assets/ignite_timer.png'
+import blogPessoal from '@/assets/blog_pessoal.png'
 
 export const projects = [
     {
@@ -42,8 +45,8 @@ export const projects = [
     },
     {
         id: '3',
-        name: 'Coffe Delivery',
-        imgUrl: coffeDelivery.src,
+        name: 'NLW-expert',
+        imgUrl: nlwExpert.src,
         description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eius
         perspiciatis, non provident saepe nesciunt officia veritatis qui id tempore.
         Suscipit saepe quod ea eius natus, cum vel reiciendis quibusdam! Lorem ipsum
@@ -54,14 +57,14 @@ export const projects = [
         aliquam ipsam, debitis vero sunt veniam quasi ducimus accusantium facilis,
         nisi sequi nihil unde quis eius! Lorem ipsum dolor sit amet consectetur,
         adipisicing elit. Id, eos praesentium. `,
-        tools: ['TypeScript', 'ReactJS', 'NodeJS', 'Styleds components', 'Github'],
-        linkRepository: 'https://github.com/Rogerio-17/coffe-delivery',
-        linkDeploy: 'https://coffe-delivery-v1.vercel.app/',
+        tools: ['TypeScript', 'ReactJS', 'NodeJS', 'Tailwind CSS', 'Github'],
+        linkRepository: 'https://github.com/Rogerio-17/NLW-expert',
+        linkDeploy: 'https://nlw-expert-git-main-rogerio-17.vercel.app',
     },
     {
         id: '4',
-        name: 'Coffe Delivery',
-        imgUrl: coffeDelivery.src,
+        name: 'Ignite Timer',
+        imgUrl: igniteTimer.src,
         description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eius
         perspiciatis, non provident saepe nesciunt officia veritatis qui id tempore.
         Suscipit saepe quod ea eius natus, cum vel reiciendis quibusdam! Lorem ipsum
@@ -73,13 +76,13 @@ export const projects = [
         nisi sequi nihil unde quis eius! Lorem ipsum dolor sit amet consectetur,
         adipisicing elit. Id, eos praesentium. `,
         tools: ['TypeScript', 'ReactJS', 'NodeJS', 'Styleds components', 'Github'],
-        linkRepository: 'https://github.com/Rogerio-17/coffe-delivery',
-        linkDeploy: 'https://coffe-delivery-v1.vercel.app/',
+        linkRepository: 'https://github.com/Rogerio-17/ignite-timer',
+        linkDeploy: 'https://ignite-timer-one-dun.vercel.app/',
     },
     {
         id: '5',
-        name: 'Coffe Delivery',
-        imgUrl: coffeDelivery.src,
+        name: 'Blog Pessoal',
+        imgUrl: blogPessoal.src,
         description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eius
         perspiciatis, non provident saepe nesciunt officia veritatis qui id tempore.
         Suscipit saepe quod ea eius natus, cum vel reiciendis quibusdam! Lorem ipsum
@@ -92,6 +95,6 @@ export const projects = [
         adipisicing elit. Id, eos praesentium. `,
         tools: ['TypeScript', 'ReactJS', 'NodeJS', 'Styleds components', 'Github'],
         linkRepository: 'https://github.com/Rogerio-17/coffe-delivery',
-        linkDeploy: 'https://coffe-delivery-v1.vercel.app/',
+        linkDeploy: '',
     },
 ]

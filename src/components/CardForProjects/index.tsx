@@ -67,24 +67,29 @@ export function CardForProjects({ project }: cardForProjectsProps) {
                     Ver detalhes <ArrowTopRightIcon w="20px" h="20px" />
                 </Link>
 
-                <Link
-                    bg="blue.200"
-                    _hover={{
-                        filter: 'brightness(0.85)',
-                        transition: 'filter 0.3s ease',
-                    }}
-                    display="flex"
-                    alignItems="center"
-                    justifyContent="center"
-                    gap="0.5rem"
-                    px="1rem"
-                    py="0.6rem"
-                    borderRadius="8px"
-                    target="_blank"
-                    href={project.linkDeploy}
-                >
-                    Deploy <RocketIcon w="20px" h="20px" />
-                </Link>
+                {project.linkDeploy !== '' ? (
+                    <Button
+                        as={NextLink}
+                        bg="blue.200"
+                        _hover={{
+                            filter: 'brightness(0.85)',
+                            transition: 'filter 0.3s ease',
+                        }}
+                        display="flex"
+                        alignItems="center"
+                        justifyContent="center"
+                        gap="0.5rem"
+                        px="1rem"
+                        py="1.4rem"
+                        borderRadius="8px"
+                        target="_blank"
+                        href={project.linkDeploy}
+                    >
+                        Deploy <RocketIcon w="20px" h="20px" />
+                    </Button>
+                ) : (
+                    ''
+                )}
             </Flex>
         </Flex>
     )

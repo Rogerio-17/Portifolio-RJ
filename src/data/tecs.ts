@@ -29,6 +29,10 @@ export const Tecs = [
     },
     {
         id: Math.floor(Math.random() * 100),
+        name: 'Tailwind CSS',
+    },
+    {
+        id: Math.floor(Math.random() * 100),
         name: 'Node JS',
     },
 ]
