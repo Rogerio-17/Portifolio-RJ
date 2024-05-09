@@ -3,6 +3,7 @@ import { Flex, Grid, Link, Text } from '@chakra-ui/react'
 import { GitHubIcon } from '@/icons/github'
 import { LinkedinIcon } from '@/icons/linkedin'
 import { InstagramIcon } from '@/icons/instagram'
+import { WhatsappIcon } from '@/icons/whatsapp'
 
 export default function ContentHome() {
     return (
@@ -32,6 +33,9 @@ export default function ContentHome() {
                         </Link>
                         <Link px="10px" py="5px" border="2px solid #85ac6e" borderRadius="50%">
                             <InstagramIcon color="#85ac6e" w="36px" h="36px" />
+                        </Link>
+                        <Link px="10px" py="5px" border="2px solid #85ac6e" borderRadius="50%">
+                            <WhatsappIcon color="#85ac6e" w="36px" h="36px" />
                         </Link>
                     </Flex>
                 </Flex>
