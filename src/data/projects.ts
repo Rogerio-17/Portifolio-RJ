@@ -97,4 +97,14 @@ export const projects = [
         linkRepository: 'https://github.com/Rogerio-17/coffe-delivery',
         linkDeploy: '',
     },
+
+    {
+        id: '6',
+        name: 'Em breve!',
+        imgUrl: '',
+        description: `Em breve`,
+        tools: [],
+        linkRepository: '',
+        linkDeploy: '',
+    },
 ]
