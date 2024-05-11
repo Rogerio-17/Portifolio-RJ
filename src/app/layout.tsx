@@ -1,14 +1,8 @@
-import type { Metadata } from 'next'
 import { Providers } from './providers'
 import { fonts } from '@/styles/themes/fonts'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
-
-export const metadata: Metadata = {
-    title: 'Portifolio RJ',
-    description:
-        'Portifolio para mostrar meus projetos, falar um pouco sobre mim e mostrar as tecnologias que estou por dentro.',
-}
+import Head from 'next/head'
 
 export default function RootLayout({
     children,
@@ -17,6 +11,9 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en" className={fonts.inter.variable}>
+            <Head>
+                <meta name="viewport" content="viewport-fit=cover" />
+            </Head>
             <body>
                 <Header />
                 <Providers>{children}</Providers>

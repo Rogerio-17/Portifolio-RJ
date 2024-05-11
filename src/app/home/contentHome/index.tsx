@@ -1,5 +1,4 @@
-import Particle from '@/components/Particle'
-import { Flex, Grid, Link, Text } from '@chakra-ui/react'
+import { Flex, Grid, Hide, Link, Show, Text } from '@chakra-ui/react'
 import { GitHubIcon } from '@/icons/github'
 import { LinkedinIcon } from '@/icons/linkedin'
 import { InstagramIcon } from '@/icons/instagram'
@@ -9,7 +8,6 @@ export default function ContentHome() {
     return (
         <Grid templateColumns="2fr 1fr" h="90vh" w="85vw" id="home" px="1rem">
             <Flex lineHeight="2.8rem" position="absolute">
-                <Particle />
                 <Flex flexDirection="column" marginTop="12rem">
                     <Text fontSize="1.5rem">Olá, eu sou o</Text>
                     <Text
