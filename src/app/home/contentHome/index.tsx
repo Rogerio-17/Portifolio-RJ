@@ -6,14 +6,18 @@ import { WhatsappIcon } from '@/icons/whatsapp'
 
 export default function ContentHome() {
     return (
-        <Grid templateColumns="2fr 1fr" h="90vh" w="85vw" id="home" px="1rem">
-            <Flex lineHeight="2.8rem" position="absolute">
-                <Flex flexDirection="column" marginTop="12rem">
+        <Grid templateColumns="2fr 1fr" h="90vh" w="90vw" id="home">
+            <Flex position="absolute">
+                <Flex
+                    flexDirection="column"
+                    marginTop={{ base: '25vh', md: '28vh' }}
+                    lineHeight={{ base: '2.4rem', md: '2.8rem' }}
+                >
                     <Text fontSize="1.5rem">Olá, eu sou o</Text>
                     <Text
                         as="span"
                         fontWeight="bold"
-                        fontSize="3.5rem"
+                        fontSize={{ base: '2.8rem', md: '3.5rem' }}
                         textTransform="uppercase"
                         color="blue.100"
                         bgGradient="linear-gradient(0deg, #85ac6e 21%, #6c6e5f 100%)"
@@ -23,16 +27,36 @@ export default function ContentHome() {
                     </Text>
                     <Text fontSize="1.2rem">Desenvolvedor front-end</Text>
                     <Flex gap="1rem">
-                        <Link px="10px" py="5px" border="2px solid #85ac6e" borderRadius="50%">
+                        <Link
+                            p="10px"
+                            px={{ base: '10px', md: '15px' }}
+                            border="2px solid #85ac6e"
+                            borderRadius="50%"
+                        >
                             <GitHubIcon color="#85ac6e" w="36px" h="36px" />
                         </Link>
-                        <Link px="10px" py="5px" border="2px solid #85ac6e" borderRadius="50%">
+                        <Link
+                            p="10px"
+                            px={{ base: '10px', md: '15px' }}
+                            border="2px solid #85ac6e"
+                            borderRadius="50%"
+                        >
                             <LinkedinIcon color="#85ac6e" w="36px" h="36px" />
                         </Link>
-                        <Link px="10px" py="5px" border="2px solid #85ac6e" borderRadius="50%">
+                        <Link
+                            p="10px"
+                            px={{ base: '10px', md: '15px' }}
+                            border="2px solid #85ac6e"
+                            borderRadius="50%"
+                        >
                             <InstagramIcon color="#85ac6e" w="36px" h="36px" />
                         </Link>
-                        <Link px="10px" py="5px" border="2px solid #85ac6e" borderRadius="50%">
+                        <Link
+                            p="10px"
+                            px={{ base: '10px', md: '15px' }}
+                            border="2px solid #85ac6e"
+                            borderRadius="50%"
+                        >
                             <WhatsappIcon color="#85ac6e" w="36px" h="36px" />
                         </Link>
                     </Flex>

@@ -66,14 +66,12 @@ export function Contact() {
         <Flex
             as="form"
             onSubmit={handleSubmit(handleSendEmail)}
-            id="projects"
+            id="contacts"
             flexDirection="column"
             alignItems="center"
             py="2rem"
-            w="85vw"
-            px="1rem"
-            margin="auto"
-            marginTop="5rem"
+            w="90vw"
+            marginTop="3rem"
         >
             <Heading fontWeight="bold">Contatos</Heading>
             <Box
@@ -84,15 +82,14 @@ export function Contact() {
                 marginTop="0.5rem"
                 marginBottom="0.5rem"
             ></Box>
-            <Text textAlign="center">
+            <Text textAlign={{ base: 'justify', md: 'center' }}>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. A aliquam nihil quis odit
                 omnis et facere ab consectetur tempore doloribus.
             </Text>
 
             <FormControl
-                marginTop="3rem"
-                w="40vw"
-                p="2rem"
+                marginTop="1rem"
+                p={{ base: '1rem', md: '2rem' }}
                 bg="rgba(236, 233, 233, 0.041)"
                 boxShadow="0px 4px 4px 0px rgba(0, 0, 0, 0.35)"
                 borderRadius="10px"

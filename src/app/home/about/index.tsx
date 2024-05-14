@@ -5,15 +5,7 @@ import { Box, Flex, Grid, Heading, Img, Text } from '@chakra-ui/react'
 export default function About() {
     return (
         <Flex w="100%" justifyContent="center" id="sobre">
-            <Flex
-                flexDirection="column"
-                alignItems="center"
-                py="2rem"
-                w="1280px"
-                maxW="1280px"
-                px="1rem"
-                margin="auto"
-            >
+            <Flex flexDirection="column" alignItems="center" w="90vw" margin="auto">
                 <Heading fontWeight="bold">Sobre mim</Heading>
                 <Box
                     w="45px"
@@ -23,15 +15,20 @@ export default function About() {
                     marginTop="0.5rem"
                     marginBottom="0.5rem"
                 ></Box>
-                <Text textAlign="center">
+                <Text textAlign={{ base: 'justify', md: 'center' }}>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. A aliquam nihil quis
                     odit omnis et facere ab consectetur tempore doloribus. Lorem ipsum, dolor sit
                     amet consectetur adipisicing elit. Rem aspernatur consequuntur praesentium nisi
                     in facere maiores beatae dolores debitis.
                 </Text>
                 {/* ------ colocar o carrossel aqui com as tecs */}
-                <Flex marginTop="5rem" justifyContent="space-between">
-                    <Flex flexDirection="column" w="45%" gap="1.5rem">
+                <Flex
+                    marginTop="3rem"
+                    justifyContent="space-between"
+                    flexDirection={{ base: 'column', md: 'row' }}
+                    gap="1.5rem"
+                >
+                    <Flex flexDirection="column" w={{ base: '100%', md: '45%' }} gap="0.5rem">
                         <Heading fontSize="1.5rem" fontWeight="bold">
                             Um pouco sobre mim
                         </Heading>
@@ -49,11 +46,11 @@ export default function About() {
                         </Flex>
                     </Flex>
 
-                    <Flex flexDirection="column" w="45%" gap="1.5rem">
+                    <Flex flexDirection="column" w={{ base: '100%', md: '45%' }} gap="1rem">
                         <Heading fontSize="1.5rem" fontWeight="bold">
                             Minhas habilidades
                         </Heading>
-                        <Flex textAlign="center" flexWrap="wrap" gap="1rem">
+                        <Flex textAlign="center" flexWrap="wrap" gap="1rem" justifyContent="center">
                             {Tecs.map((tec) => (
                                 <Flex
                                     key={tec.id}

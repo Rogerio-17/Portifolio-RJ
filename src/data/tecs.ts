@@ -1,38 +1,38 @@
 export const Tecs = [
     {
-        id: Math.floor(Math.random() * 100),
+        id: 1,
         name: 'HTML',
     },
     {
-        id: Math.floor(Math.random() * 100),
+        id: 2,
         name: 'CSS',
     },
     {
-        id: Math.floor(Math.random() * 100),
+        id: 3,
         name: 'TypeScript',
     },
     {
-        id: Math.floor(Math.random() * 100),
+        id: 4,
         name: 'React JS',
     },
     {
-        id: Math.floor(Math.random() * 100),
+        id: 5,
         name: 'Next JS',
     },
     {
-        id: Math.floor(Math.random() * 100),
+        id: 6,
         name: 'Chakra UI',
     },
     {
-        id: Math.floor(Math.random() * 100),
+        id: 7,
         name: 'Styled Components',
     },
     {
-        id: Math.floor(Math.random() * 100),
+        id: 8,
         name: 'Tailwind CSS',
     },
     {
-        id: Math.floor(Math.random() * 100),
+        id: 9,
         name: 'Node JS',
     },
 ]

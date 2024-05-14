@@ -27,7 +27,7 @@ export function Header() {
         <Flex justifyContent="center" py="1.2rem">
             <Flex justifyContent="space-between" w="80rem" px="1rem">
                 <Link href="/">
-                    <Image src={logo.src} w="160px" h="40px" />
+                    <Image src={logo.src} w="10rem" h="2.5rem" />
                 </Link>
 
                 <Flex justifyContent="right" gap="0.5rem">
@@ -39,6 +39,7 @@ export function Header() {
                         justifyContent="center"
                         gap="0.2rem"
                         p="6px"
+                        fontSize="0.8rem"
                     >
                         <DownloadIcon w="1.2rem" h="1.2rem" /> Download CV
                     </ButtonContainer>
@@ -75,7 +76,8 @@ export function Header() {
                                         filter: 'brightness(0.85)',
                                         transition: 'filter 0.3s ease',
                                     }}
-                                    href="/"
+                                    href="/#home"
+                                    onClick={onClose}
                                 >
                                     Home
                                 </Link>
@@ -96,6 +98,7 @@ export function Header() {
                                         transition: 'filter 0.3s ease',
                                     }}
                                     href="/#projects"
+                                    onClick={onClose}
                                 >
                                     Projetos
                                 </Link>
@@ -104,6 +107,8 @@ export function Header() {
                                         filter: 'brightness(0.90)',
                                         transition: 'filter 0.3s ease',
                                     }}
+                                    href="/#contacts"
+                                    onClick={onClose}
                                 >
                                     Contatos
                                 </Link>

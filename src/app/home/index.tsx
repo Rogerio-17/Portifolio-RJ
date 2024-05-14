@@ -6,13 +6,11 @@ import { Contact } from './contact'
 
 export default function Home() {
     return (
-        <Flex flexDirection="column" alignItems="center" margin="0 auto" px="1rem">
+        <Flex flexDirection="column" alignItems="center" margin="0 auto">
             <ContentHome />
-            <Flex bg="blue.900" position="relative" w="100vw" flexDirection="column">
-                <About />
-                <Projets />
-                <Contact />
-            </Flex>
+            <About />
+            <Projets />
+            <Contact />
         </Flex>
     )
 }

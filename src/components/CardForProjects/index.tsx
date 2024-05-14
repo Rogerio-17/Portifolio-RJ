@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Image, Link, Text } from '@chakra-ui/react'
+import { Box, Button, Flex, FlexProps, Image, Link, Text } from '@chakra-ui/react'
 import ignite from '@/assets/ignite_shop.png'
 import { ArrowLeftIcon } from '@/icons/arrowLeft'
 import NextLink from 'next/link'
@@ -6,7 +6,7 @@ import { ArrowTopRightIcon } from '@/icons/arrowTopRight'
 import { RocketIcon } from '@/icons/rocket'
 import { InformationIcon } from '@/icons/information'
 
-interface cardForProjectsProps {
+interface cardForProjectsProps extends FlexProps {
     project: {
         id: string
         name: string
@@ -18,7 +18,7 @@ interface cardForProjectsProps {
     }
 }
 
-export function CardForProjects({ project }: cardForProjectsProps) {
+export function CardForProjects({ project, ...props }: cardForProjectsProps) {
     return (
         <Flex
             w="400px"
@@ -29,10 +29,17 @@ export function CardForProjects({ project }: cardForProjectsProps) {
             flexDirection="column"
             p="0.6rem"
             position="relative"
+            {...props}
         >
             {project.imgUrl !== '' ? (
                 <>
-                    <Image src={project.imgUrl} w="100%" h="220px" borderRadius="8px" mb="0.5rem" />
+                    <Image
+                        src={project.imgUrl}
+                        w="100%"
+                        h={{ base: '180px', md: '220px' }}
+                        borderRadius="8px"
+                        mb="0.5rem"
+                    />
                     <Text as="h3" fontSize="1.3rem" fontWeight="bold" mb="0.3rem">
                         {project.name}
                     </Text>
@@ -67,6 +74,7 @@ export function CardForProjects({ project }: cardForProjectsProps) {
                             py="0.6rem"
                             borderRadius="8px"
                             href={`project_details?projectId=${project.id}`}
+                            fontSize={{ base: '0.8rem', md: '1rem' }}
                         >
                             Ver detalhes <ArrowTopRightIcon w="20px" h="20px" />
                         </Link>
@@ -88,6 +96,7 @@ export function CardForProjects({ project }: cardForProjectsProps) {
                                 borderRadius="8px"
                                 target="_blank"
                                 href={project.linkDeploy}
+                                fontSize={{ base: '0.8rem', md: '1rem' }}
                             >
                                 Deploy <RocketIcon w="20px" h="20px" />
                             </Button>
@@ -107,6 +116,7 @@ export function CardForProjects({ project }: cardForProjectsProps) {
                                 borderRadius="8px"
                                 isDisabled
                                 title="Deploy inexistente."
+                                fontSize={{ base: '0.8rem', md: '1rem' }}
                             >
                                 Deploy <RocketIcon w="20px" h="20px" />
                             </Button>
@@ -118,12 +128,12 @@ export function CardForProjects({ project }: cardForProjectsProps) {
                     <Flex
                         bg="rgba(153, 153, 153, 0.075)"
                         w="100%"
-                        h="220px"
+                        h={{ base: '180px', md: '220px' }}
                         borderRadius="8px"
                         mb="0.5rem"
                         alignItems="center"
                         justifyContent="center"
-                        fontSize="1.5rem"
+                        fontSize={{ base: '1rem', md: '1.5rem' }}
                     >
                         Em desenvolvimento!
                     </Flex>
@@ -134,9 +144,12 @@ export function CardForProjects({ project }: cardForProjectsProps) {
                             title={`Este projeto está temporariamente\nindisponível pois está em\ndesenvolvimento. Assim que for\nconcluído, estará no meu\nportfólio.`}
                             whiteSpace="pre-line"
                         >
-                            <InformationIcon w="22px" h="22px" />
+                            <InformationIcon
+                                w={{ base: '18', md: '22' }}
+                                h={{ base: '18', md: '22' }}
+                            />
                         </Text>
-                        <Text as="h3" fontSize="1.3rem" fontWeight="bold">
+                        <Text as="h3" fontSize={{ base: '1rem', md: '1.3rem' }} fontWeight="bold">
                             Indisponível
                         </Text>
                     </Flex>
@@ -162,7 +175,7 @@ export function CardForProjects({ project }: cardForProjectsProps) {
                         mt="1.5rem"
                         position="absolute"
                         bottom="0.6rem"
-                        w="95%"
+                        w={{ base: '93%', md: '95%' }}
                     >
                         <Button
                             bg="rgba(153, 153, 153, 0.2)"
@@ -179,6 +192,7 @@ export function CardForProjects({ project }: cardForProjectsProps) {
                             borderRadius="8px"
                             isDisabled
                             title="Indisponível"
+                            fontSize={{ base: '0.8rem', md: '1rem' }}
                         >
                             Ver detalhes <ArrowTopRightIcon w="20px" h="20px" />
                         </Button>
@@ -198,6 +212,7 @@ export function CardForProjects({ project }: cardForProjectsProps) {
                             borderRadius="8px"
                             isDisabled
                             title="Deploy inexistente."
+                            fontSize={{ base: '0.8rem', md: '1rem' }}
                         >
                             Deploy <RocketIcon w="20px" h="20px" />
                         </Button>
