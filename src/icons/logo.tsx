@@ -313,13 +313,13 @@ export function LogoIcon(props: IconProps) {
                 </g>
             </g>
             <path
-                stroke-linecap="butt"
+                strokeLinecap="butt"
                 transform="matrix(0, -0.582424, 0.582424, 0, 58.643274, 103.816579)"
                 fill="none"
-                stroke-linejoin="miter"
+                strokeLinejoin="miter"
                 d="M 0.000296956 1.001485 L 105.405734 1.001485 "
                 stroke="#fff"
-                stroke-width="1"
+                strokeWidth="1"
                 stroke-opacity="1"
                 stroke-miterlimit="4"
             />
