@@ -26,9 +26,7 @@ export function Header() {
     return (
         <Flex justifyContent="center" py="1.2rem">
             <Flex justifyContent="space-between" w="95vw">
-                <Link href="/">
-                    <Image src={logo.src} w={{ base: '160px', md: '180px' }} h="50px" />
-                </Link>
+                <Link href="/">Logo</Link>
 
                 <Show above="md">
                     <Flex alignItems="center" gap="2rem">
