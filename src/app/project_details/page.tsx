@@ -19,14 +19,7 @@ export default function ProjectDetails({ searchParams }: ProjectDetailsProps) {
     const project = filterProject[0]
 
     return (
-        <Flex
-            w="85vw"
-            px="1rem"
-            margin="auto"
-            justifyContent="center"
-            flexDirection="column"
-            gap="1rem"
-        >
+        <Flex w="95vw" margin="auto" justifyContent="center" flexDirection="column" gap="1rem">
             <Link
                 as={NextLink}
                 bg="transparent"
@@ -40,10 +33,10 @@ export default function ProjectDetails({ searchParams }: ProjectDetailsProps) {
                 gap="0.5rem"
                 borderRadius="8px"
                 w="5rem"
-                fontSize="1.2rem"
+                fontSize={{ base: '1rem', md: '1.2rem' }}
                 href="/"
             >
-                <ArrowLeftIcon w="24px" h="24px" /> Voltar
+                <ArrowLeftIcon w="22px" h="22px" /> Voltar
             </Link>
             <Flex flexDirection="column" gap="3rem">
                 <Flex
@@ -54,7 +47,7 @@ export default function ProjectDetails({ searchParams }: ProjectDetailsProps) {
                     boxShadow="0px 4px 4px 0px rgba(0, 0, 0, 0.35)"
                     flexDirection="column"
                 >
-                    <Image src={project.imgUrl} w="100%" borderRadius="8px"></Image>
+                    <Image src={project.imgUrl} w="100%" borderRadius="8px" minH="30vh"></Image>
                     <Flex justifyContent="center" gap="2rem" mt="0.5rem">
                         {project.linkDeploy !== '' ? (
                             <Link
@@ -101,7 +94,11 @@ export default function ProjectDetails({ searchParams }: ProjectDetailsProps) {
                     </Flex>
                 </Flex>
 
-                <Flex flexDirection="column" gap="3rem" marginBottom="3rem">
+                <Flex
+                    flexDirection="column"
+                    gap={{ base: '1.5rem', md: '3rem' }}
+                    marginBottom="3rem"
+                >
                     <Flex flexDirection="column" gap="1rem">
                         <Heading>{project.name}</Heading>
                         <Text fontSize="1.2rem" textAlign="justify">
@@ -109,9 +106,16 @@ export default function ProjectDetails({ searchParams }: ProjectDetailsProps) {
                         </Text>
                     </Flex>
 
-                    <Flex flexDirection="column" gap="1rem">
-                        <Heading>Ferramentas utilizadas</Heading>
-                        <Flex textAlign="center" flexWrap="wrap" gap="1rem">
+                    <Flex flexDirection="column" gap={{ base: '0.5rem', md: '1rem' }}>
+                        <Heading textAlign={{ base: 'center', md: 'initial' }}>
+                            Ferramentas utilizadas
+                        </Heading>
+                        <Flex
+                            textAlign="center"
+                            flexWrap="wrap"
+                            gap={{ base: '0.5rem', md: '1rem' }}
+                            justifyContent={{ base: 'center', md: 'left' }}
+                        >
                             {project.tools.map((tec) => (
                                 <Flex
                                     key={tec}

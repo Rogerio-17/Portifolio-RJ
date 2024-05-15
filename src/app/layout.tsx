@@ -1,7 +1,7 @@
-import { Providers } from './providers'
 import { fonts } from '@/styles/themes/fonts'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
+import { Providers } from './providers'
 import Head from 'next/head'
 
 export default function RootLayout({
@@ -15,9 +15,11 @@ export default function RootLayout({
                 <meta name="viewport" content="viewport-fit=cover" />
             </Head>
             <body>
-                <Header />
-                <Providers>{children}</Providers>
-                <Footer />
+                <Providers>
+                    <Header />
+                    {children}
+                    <Footer />
+                </Providers>
             </body>
         </html>
     )

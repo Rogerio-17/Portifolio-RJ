@@ -70,7 +70,7 @@ export function Contact() {
             flexDirection="column"
             alignItems="center"
             py="2rem"
-            w="90vw"
+            w={{ base: '95vw', md: '40vw' }}
             marginTop="3rem"
         >
             <Heading fontWeight="bold">Contatos</Heading>

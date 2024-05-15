@@ -36,7 +36,7 @@ export function CardForProjects({ project, ...props }: cardForProjectsProps) {
                     <Image
                         src={project.imgUrl}
                         w="100%"
-                        h={{ base: '180px', md: '220px' }}
+                        h={{ base: '25vh', md: '32vh' }}
                         borderRadius="8px"
                         mb="0.5rem"
                     />
@@ -128,7 +128,7 @@ export function CardForProjects({ project, ...props }: cardForProjectsProps) {
                     <Flex
                         bg="rgba(153, 153, 153, 0.075)"
                         w="100%"
-                        h={{ base: '180px', md: '220px' }}
+                        h={{ base: '25vh', md: '32vh' }}
                         borderRadius="8px"
                         mb="0.5rem"
                         alignItems="center"

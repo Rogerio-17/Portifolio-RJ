@@ -25,97 +25,157 @@ export function Header() {
 
     return (
         <Flex justifyContent="center" py="1.2rem">
-            <Flex justifyContent="space-between" w="80rem" px="1rem">
+            <Flex justifyContent="space-between" w="95vw">
                 <Link href="/">
-                    <Image src={logo.src} w="10rem" h="2.5rem" />
+                    <Image src={logo.src} w={{ base: '160px', md: '180px' }} h="50px" />
                 </Link>
 
-                <Flex justifyContent="right" gap="0.5rem">
-                    <ButtonContainer
-                        href={curriculum}
-                        download="Rogerio_Jose"
-                        display="flex"
-                        alignItems="center"
-                        justifyContent="center"
-                        gap="0.2rem"
-                        p="6px"
-                        fontSize="0.8rem"
-                    >
-                        <DownloadIcon w="1.2rem" h="1.2rem" /> Download CV
-                    </ButtonContainer>
-                    <Button onClick={onOpen} bg="transparent" w="30px">
-                        <ListIcon w="28px" h="28px" color="white" />
-                    </Button>
-                    <Drawer
-                        placement="right"
-                        onClose={onClose}
-                        isOpen={isOpen}
-                        returnFocusOnClose={false}
-                        preserveScrollBarGap={false}
-                    >
-                        <DrawerOverlay />
-                        <DrawerContent bg="#10192c">
-                            <DrawerHeader borderBottomWidth="1px">
-                                <Flex alignItems="center" justifyContent="right" p="1rem">
-                                    <Button bg="transparent" onClick={onClose}>
-                                        <X w="24px" h="24px" />
-                                    </Button>
-                                </Flex>
-                            </DrawerHeader>
-                            <DrawerBody
-                                display="flex"
-                                flexDirection="column"
-                                alignItems="center"
-                                gap="1rem"
-                                mt="1rem"
-                                px="1rem"
-                                fontSize="2rem"
+                <Show above="md">
+                    <Flex alignItems="center" gap="2rem">
+                        <Flex gap="2rem">
+                            <Link
+                                _hover={{
+                                    filter: 'brightness(0.85)',
+                                    transition: 'filter 0.3s ease',
+                                }}
+                                href="/"
                             >
-                                <Link
-                                    _hover={{
-                                        filter: 'brightness(0.85)',
-                                        transition: 'filter 0.3s ease',
-                                    }}
-                                    href="/#home"
-                                    onClick={onClose}
-                                >
-                                    Home
-                                </Link>
+                                Home
+                            </Link>
+                            <Link
+                                _hover={{
+                                    filter: 'brightness(0.90)',
+                                    transition: 'filter 0.3s ease',
+                                }}
+                                href="/#sobre"
+                            >
+                                Sobre
+                            </Link>
+                            <Link
+                                _hover={{
+                                    filter: 'brightness(0.90)',
+                                    transition: 'filter 0.3s ease',
+                                }}
+                                href="/#projects"
+                            >
+                                Projetos
+                            </Link>
+                            <Link
+                                _hover={{
+                                    filter: 'brightness(0.90)',
+                                    transition: 'filter 0.3s ease',
+                                }}
+                            >
+                                Contatos
+                            </Link>
+                        </Flex>
 
-                                <Link
-                                    _hover={{
-                                        filter: 'brightness(0.90)',
-                                        transition: 'filter 0.3s ease',
-                                    }}
-                                    href="/#sobre"
-                                    onClick={onClose}
+                        <ButtonContainer
+                            href={curriculum}
+                            download="Rogerio_Jose"
+                            display="flex"
+                            alignItems="center"
+                            justifyContent="center"
+                            gap="0.2rem"
+                            px="8px"
+                            fontSize="0.8rem"
+                        >
+                            <DownloadIcon w="1.2rem" h="1.2rem" /> Download CV
+                        </ButtonContainer>
+                    </Flex>
+                </Show>
+
+                <Hide above="md">
+                    <Flex alignItems="center" gap="0.2rem">
+                        <ButtonContainer
+                            href={curriculum}
+                            download="Rogerio_Jose"
+                            display="flex"
+                            alignItems="center"
+                            justifyContent="center"
+                            gap="0.2rem"
+                            p="6px"
+                            fontSize="0.8rem"
+                            h="35px"
+                        >
+                            <DownloadIcon w="1.2rem" h="1.2rem" /> Download CV
+                        </ButtonContainer>
+                        <Button onClick={onOpen} bg="transparent" w="20px">
+                            <ListIcon w="28px" h="28px" color="white" />
+                        </Button>
+                        <Drawer
+                            placement="right"
+                            onClose={onClose}
+                            isOpen={isOpen}
+                            returnFocusOnClose={false}
+                            preserveScrollBarGap={false}
+                            size="full"
+                        >
+                            <DrawerOverlay />
+                            <DrawerContent bg="#10192c">
+                                <DrawerHeader p="0.5rem">
+                                    <Flex justifyContent="right">
+                                        <Button bg="transparent" onClick={onClose}>
+                                            <X w="32px" h="32px" />
+                                        </Button>
+                                    </Flex>
+                                </DrawerHeader>
+                                <DrawerBody
+                                    display="flex"
+                                    flexDirection="column"
+                                    alignItems="center"
+                                    gap="2rem"
+                                    mt="1rem"
+                                    px="1rem"
+                                    fontSize="2rem"
+                                    marginTop="2rem"
                                 >
-                                    Sobre
-                                </Link>
-                                <Link
-                                    _hover={{
-                                        filter: 'brightness(0.90)',
-                                        transition: 'filter 0.3s ease',
-                                    }}
-                                    href="/#projects"
-                                    onClick={onClose}
-                                >
-                                    Projetos
-                                </Link>
-                                <Link
-                                    _hover={{
-                                        filter: 'brightness(0.90)',
-                                        transition: 'filter 0.3s ease',
-                                    }}
-                                    href="/#contacts"
-                                    onClick={onClose}
-                                >
-                                    Contatos
-                                </Link>
-                            </DrawerBody>
-                        </DrawerContent>
-                    </Drawer>
-                </Flex>
+                                    <Link
+                                        _hover={{
+                                            filter: 'brightness(0.85)',
+                                            transition: 'filter 0.3s ease',
+                                        }}
+                                        href="/#home"
+                                        onClick={onClose}
+                                    >
+                                        Home
+                                    </Link>
+
+                                    <Link
+                                        _hover={{
+                                            filter: 'brightness(0.90)',
+                                            transition: 'filter 0.3s ease',
+                                        }}
+                                        href="/#sobre"
+                                        onClick={onClose}
+                                    >
+                                        Sobre
+                                    </Link>
+                                    <Link
+                                        _hover={{
+                                            filter: 'brightness(0.90)',
+                                            transition: 'filter 0.3s ease',
+                                        }}
+                                        href="/#projects"
+                                        onClick={onClose}
+                                    >
+                                        Projetos
+                                    </Link>
+                                    <Link
+                                        _hover={{
+                                            filter: 'brightness(0.90)',
+                                            transition: 'filter 0.3s ease',
+                                        }}
+                                        href="/#contacts"
+                                        onClick={onClose}
+                                    >
+                                        Contatos
+                                    </Link>
+                                </DrawerBody>
+                            </DrawerContent>
+                        </Drawer>
+                    </Flex>
+                </Hide>
             </Flex>
         </Flex>
     )

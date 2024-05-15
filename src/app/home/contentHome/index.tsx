@@ -6,7 +6,7 @@ import { WhatsappIcon } from '@/icons/whatsapp'
 
 export default function ContentHome() {
     return (
-        <Grid templateColumns="2fr 1fr" h="90vh" w="90vw" id="home">
+        <Grid templateColumns="2fr 1fr" h="90vh" w="95vw" id="home">
             <Flex position="absolute">
                 <Flex
                     flexDirection="column"
@@ -28,32 +28,32 @@ export default function ContentHome() {
                     <Text fontSize="1.2rem">Desenvolvedor front-end</Text>
                     <Flex gap="1rem">
                         <Link
-                            p="10px"
-                            px={{ base: '10px', md: '15px' }}
+                            py={{ base: '10px', md: '5px' }}
+                            px={{ base: '10px', md: '10px' }}
                             border="2px solid #85ac6e"
                             borderRadius="50%"
                         >
                             <GitHubIcon color="#85ac6e" w="36px" h="36px" />
                         </Link>
                         <Link
-                            p="10px"
-                            px={{ base: '10px', md: '15px' }}
+                            py={{ base: '10px', md: '5px' }}
+                            px={{ base: '10px', md: '10px' }}
                             border="2px solid #85ac6e"
                             borderRadius="50%"
                         >
                             <LinkedinIcon color="#85ac6e" w="36px" h="36px" />
                         </Link>
                         <Link
-                            p="10px"
-                            px={{ base: '10px', md: '15px' }}
+                            py={{ base: '10px', md: '5px' }}
+                            px={{ base: '10px', md: '10px' }}
                             border="2px solid #85ac6e"
                             borderRadius="50%"
                         >
                             <InstagramIcon color="#85ac6e" w="36px" h="36px" />
                         </Link>
                         <Link
-                            p="10px"
-                            px={{ base: '10px', md: '15px' }}
+                            py={{ base: '10px', md: '5px' }}
+                            px={{ base: '10px', md: '10px' }}
                             border="2px solid #85ac6e"
                             borderRadius="50%"
                         >

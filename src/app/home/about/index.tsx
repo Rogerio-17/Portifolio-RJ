@@ -5,7 +5,7 @@ import { Box, Flex, Grid, Heading, Img, Text } from '@chakra-ui/react'
 export default function About() {
     return (
         <Flex w="100%" justifyContent="center" id="sobre">
-            <Flex flexDirection="column" alignItems="center" w="90vw" margin="auto">
+            <Flex flexDirection="column" alignItems="center" w="95vw" margin="auto">
                 <Heading fontWeight="bold">Sobre mim</Heading>
                 <Box
                     w="45px"

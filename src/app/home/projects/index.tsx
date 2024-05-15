@@ -1,7 +1,7 @@
 'use client'
 import { CardForProjects } from '@/components/CardForProjects'
 import { projects } from '@/data/projects'
-import { Box, Flex, Heading, Text } from '@chakra-ui/react'
+import { Box, Flex, Heading, Hide, Show, Text } from '@chakra-ui/react'
 import { useKeenSlider } from 'keen-slider/react'
 import 'keen-slider/keen-slider.min.css'
 
@@ -23,7 +23,7 @@ export function Projets() {
             flexDirection="column"
             alignItems="center"
             py="2rem"
-            w="85vw"
+            w="95vw"
             margin="auto"
             marginTop="5rem"
         >
@@ -36,19 +36,30 @@ export function Projets() {
                 marginTop="0.5rem"
                 marginBottom="0.5rem"
             ></Box>
-            <Text textAlign="center" marginBottom="1rem">
+            <Text textAlign={{ base: 'justify', md: 'center' }} marginBottom="1rem">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. A aliquam nihil quis odit
                 omnis et facere ab consectetur tempore doloribus.
             </Text>
-            <Flex ref={sliderRef} className="keen-slider" p="5px">
-                {projects.map((project) => (
-                    <CardForProjects
-                        key={project.id}
-                        project={project}
-                        className="keen-slider__slide"
-                    />
-                ))}
-            </Flex>
+
+            <Show above="md">
+                <Flex p="5px" flexWrap="wrap" gap="2rem" justifyContent="center">
+                    {projects.map((project) => (
+                        <CardForProjects key={project.id} project={project} />
+                    ))}
+                </Flex>
+            </Show>
+
+            <Hide above="md">
+                <Flex ref={sliderRef} className="keen-slider" p="5px">
+                    {projects.map((project) => (
+                        <CardForProjects
+                            key={project.id}
+                            project={project}
+                            className="keen-slider__slide"
+                        />
+                    ))}
+                </Flex>
+            </Hide>
         </Flex>
     )
 }
