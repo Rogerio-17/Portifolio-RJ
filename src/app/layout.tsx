@@ -1,5 +1,5 @@
 import { fonts } from '@/styles/themes/fonts'
-import { Header } from '@/components/Header'
+import Header from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { Providers } from './providers'
 import Head from 'next/head'
