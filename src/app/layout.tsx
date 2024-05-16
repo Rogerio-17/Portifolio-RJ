@@ -2,7 +2,7 @@ import { fonts } from '@/styles/themes/fonts'
 import { Providers } from './providers'
 import Head from 'next/head'
 import { Footer } from '@/components/Footer'
-import Header from '@/components/Header'
+import { Header } from '@/components/header'
 
 export default function RootLayout({
     children,
