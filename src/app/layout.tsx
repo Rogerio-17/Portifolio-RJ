@@ -1,8 +1,8 @@
 import { fonts } from '@/styles/themes/fonts'
 import { Providers } from './providers'
 import Head from 'next/head'
-
 import { Footer } from '@/components/Footer'
+import Header from '@/components/Header'
 
 export default function RootLayout({
     children,
@@ -16,6 +16,7 @@ export default function RootLayout({
             </Head>
             <body>
                 <Providers>
+                    <Header />
                     {children}
                     <Footer />
                 </Providers>
