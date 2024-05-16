@@ -20,7 +20,6 @@ import { ListIcon } from '@/icons/list'
 import { X } from '@/icons/X'
 
 export default function Header() {
-    const curriculum = '/pdfs/rogerio_jose.pdf'
     const { isOpen, onOpen, onClose } = useDisclosure()
 
     return (
