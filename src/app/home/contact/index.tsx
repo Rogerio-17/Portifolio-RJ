@@ -15,6 +15,7 @@ import * as zod from 'zod'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import emailjs from '@emailjs/browser'
+import { toast } from 'react-toastify'
 
 const MesssageSchema = zod.object({
     personalData: zod.object({
@@ -54,10 +55,10 @@ export function Contact() {
         emailjs
             .send('service_8ipi2bs', 'template_16dogpv', templateParams, 'h22JGKcDYMwmBKKrV')
             .then(() => {
-                alert('Sucesso ao enviar o email.')
+                toast.success('Email enviado com sucesso!')
             })
             .catch(() => {
-                alert('Erro ao enviar email.')
+                toast.error('Erro ao enviar email.')
             })
     }
 
