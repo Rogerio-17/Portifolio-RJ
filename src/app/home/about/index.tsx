@@ -15,7 +15,7 @@ export default function About() {
                     marginTop="0.5rem"
                     marginBottom="0.5rem"
                 ></Box>
-                <Text textAlign={{ base: 'justify', md: 'center' }}>
+                <Text textAlign={{ base: 'justify', md: 'center' }} maxW="60rem">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. A aliquam nihil quis
                     odit omnis et facere ab consectetur tempore doloribus. Lorem ipsum, dolor sit
                     amet consectetur adipisicing elit. Rem aspernatur consequuntur praesentium nisi
@@ -50,7 +50,12 @@ export default function About() {
                         <Heading fontSize="1.5rem" fontWeight="bold">
                             Minhas habilidades
                         </Heading>
-                        <Flex textAlign="center" flexWrap="wrap" gap="1rem" justifyContent="center">
+                        <Flex
+                            textAlign="center"
+                            flexWrap="wrap"
+                            gap="1rem"
+                            justifyContent={{ base: 'center', md: 'normal' }}
+                        >
                             {Tecs.map((tec) => (
                                 <Flex
                                     key={tec.id}

@@ -6,11 +6,18 @@ import { Tecs } from '@/data/tecs'
 import { projects } from '@/data/projects'
 import NextLink from 'next/link'
 import { GitHubIcon } from '@/icons/github'
+import type { Metadata } from 'next'
 
 interface ProjectDetailsProps {
     searchParams: {
         projectId: string
     }
+}
+
+export const metadata: Metadata = {
+    title: 'Portifolio RJ | Detalhes',
+    description:
+        'Portifolio para mostrar meus projetos, falar um pouco sobre mim e mostrar as tecnologias que estou por dentro.',
 }
 
 export default function ProjectDetails({ searchParams }: ProjectDetailsProps) {

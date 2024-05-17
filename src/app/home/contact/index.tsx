@@ -69,6 +69,7 @@ export function Contact() {
             id="contacts"
             flexDirection="column"
             alignItems="center"
+            margin="auto"
             py="2rem"
             w={{ base: '95vw', md: '40vw' }}
             marginTop="3rem"

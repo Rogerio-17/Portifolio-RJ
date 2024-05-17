@@ -8,9 +8,11 @@ export default function Home() {
     return (
         <Flex flexDirection="column" alignItems="center" margin="0 auto">
             <ContentHome />
-            <About />
-            <Projets />
-            <Contact />
+            <Flex flexDirection="column" bg="blue.900" position="relative" zIndex="2" w="100%">
+                <About />
+                <Projets />
+                <Contact />
+            </Flex>
         </Flex>
     )
 }
