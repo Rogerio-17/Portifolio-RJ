@@ -3,6 +3,7 @@ import ContentHome from './contentHome'
 import About from './about'
 import { Projets } from './projects'
 import { Contact } from './contact'
+import { ScrollToTopButton } from '@/components/ButtonForScroll'
 
 export default function Home() {
     return (
@@ -13,6 +14,8 @@ export default function Home() {
                 <Projets />
                 <Contact />
             </Flex>
+
+            <ScrollToTopButton />
         </Flex>
     )
 }
