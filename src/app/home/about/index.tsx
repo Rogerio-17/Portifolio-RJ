@@ -3,7 +3,6 @@ import { GitHubIcon } from '@/icons/github'
 import { Box, Flex, Grid, Heading, Img, Text } from '@chakra-ui/react'
 
 export default function About() {
-    console.log(Tecs[0])
     return (
         <Flex w="100%" justifyContent="center" id="sobre">
             <Flex flexDirection="column" alignItems="center" w="95vw" margin="auto">
@@ -61,13 +60,14 @@ export default function About() {
                                 <Flex
                                     key={tec.id}
                                     bg="rgba(153, 153, 153, 0.2)"
-                                    w="120px"
-                                    p="0.5rem"
-                                    justifyContent="center"
+                                    p="0.5rem 1.2rem"
+                                    justifyContent="left"
                                     alignItems="center"
                                     borderRadius="10px"
+                                    gap="0.2rem"
                                 >
-                                    {tec.name}
+                                    {tec.svg}
+                                    <Text textAlign="start">{tec.name}</Text>
                                 </Flex>
                             ))}
                         </Flex>
