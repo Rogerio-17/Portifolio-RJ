@@ -1,3 +1,5 @@
+import { HtmlIcon } from '@/icons/html'
+
 export const Tecs = [
     {
         id: 1,
