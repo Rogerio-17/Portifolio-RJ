@@ -38,7 +38,7 @@ export function Header() {
                                     filter: 'brightness(0.85)',
                                     transition: 'filter 0.3s ease',
                                 }}
-                                href="/"
+                                href="/#home"
                             >
                                 Home
                             </Link>

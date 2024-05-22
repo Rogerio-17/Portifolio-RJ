@@ -11,7 +11,7 @@ export function Footer() {
         'https://wa.me/5584981301382?text=Ol%C3%A1%20Rog%C3%A9rio%2C%20encontrei%20seu%20portf%C3%B3lio%20e%20estou%20muito%20interessado%20em%20falar%20com%20voc%C3%AA.'
     return (
         <Flex w="100vw" h="280px" bg="#03031def" position="relative" zIndex="1">
-            <Flex w={{ base: '95vw', md: '75vw' }} margin="auto" flexDirection="column">
+            <Flex w={{ base: '95vw', md: '95vw' }} margin="auto" flexDirection="column">
                 <Flex
                     h="150px"
                     gap="1rem"
