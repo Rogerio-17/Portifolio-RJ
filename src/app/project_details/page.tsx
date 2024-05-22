@@ -128,7 +128,7 @@ export default function ProjectDetails({ searchParams }: ProjectDetailsProps) {
                             textAlign="center"
                             flexWrap="wrap"
                             gap={{ base: '0.5rem', md: '1rem' }}
-                            justifyContent={{ base: 'left', md: 'center' }}
+                            justifyContent="left"
                         >
                             {project.tools.map((tec: ToolsProps) => (
                                 <Flex
