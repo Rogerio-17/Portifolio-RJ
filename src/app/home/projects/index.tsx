@@ -18,7 +18,6 @@ export function Projets() {
         slides: { perView: 1.125, spacing: 20 },
     })
 
-    console.log(projects)
     return (
         <Flex
             id="projects"

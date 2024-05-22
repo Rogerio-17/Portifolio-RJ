@@ -1,8 +1,10 @@
 import { ChakraUiIcon } from '@/icons/chakraUi'
 import { CssIcon } from '@/icons/css'
+import { GitHubIcon } from '@/icons/github'
 import { HtmlIcon } from '@/icons/html'
 import { NextJsIcon } from '@/icons/nextJs'
 import { NodeJsIcon } from '@/icons/nodeJs'
+import { RadixUiIcon } from '@/icons/radixUi'
 import { ReactIcon } from '@/icons/react'
 import { StyledComponentsIcon } from '@/icons/styledComponents'
 import { TailwindCssIcon } from '@/icons/tailwindCss'
@@ -51,6 +53,18 @@ export const Tecs = [
     },
     {
         id: 9,
+        name: 'Radix UI',
+        svg: <RadixUiIcon w="22px" h="22px" color="#000" />,
+    },
+
+    {
+        id: 10,
+        name: 'Github',
+        svg: <GitHubIcon w="22px" h="22px" color="#000" />,
+    },
+
+    {
+        id: 11,
         name: 'Node JS',
         svg: <NodeJsIcon w="22px" h="22px" color="#8CC84B" />,
     },

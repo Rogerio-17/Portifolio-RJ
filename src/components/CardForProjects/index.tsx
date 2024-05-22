@@ -5,6 +5,7 @@ import NextLink from 'next/link'
 import { ArrowTopRightIcon } from '@/icons/arrowTopRight'
 import { RocketIcon } from '@/icons/rocket'
 import { InformationIcon } from '@/icons/information'
+import { ReactNode } from 'react'
 
 interface cardForProjectsProps extends FlexProps {
     project: {
@@ -12,7 +13,11 @@ interface cardForProjectsProps extends FlexProps {
         name: string
         imgUrl: string
         description: string
-        tools: string[]
+        tools: {
+            id: number
+            name: string
+            svg: ReactNode
+        }[]
         linkRepository: string
         linkDeploy: string
     }

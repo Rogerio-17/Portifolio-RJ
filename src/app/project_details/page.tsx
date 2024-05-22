@@ -7,11 +7,18 @@ import { projects } from '@/data/projects'
 import NextLink from 'next/link'
 import { GitHubIcon } from '@/icons/github'
 import type { Metadata } from 'next'
+import { ReactNode } from 'react'
 
 interface ProjectDetailsProps {
     searchParams: {
         projectId: string
     }
+}
+
+interface ToolsProps {
+    id: number
+    name: string
+    svg: ReactNode
 }
 
 export const metadata: Metadata = {
@@ -114,26 +121,27 @@ export default function ProjectDetails({ searchParams }: ProjectDetailsProps) {
                     </Flex>
 
                     <Flex flexDirection="column" gap={{ base: '0.5rem', md: '1rem' }}>
-                        <Heading textAlign={{ base: 'center', md: 'initial' }}>
+                        <Heading textAlign={{ base: 'left', md: 'initial' }}>
                             Ferramentas utilizadas
                         </Heading>
                         <Flex
                             textAlign="center"
                             flexWrap="wrap"
                             gap={{ base: '0.5rem', md: '1rem' }}
-                            justifyContent={{ base: 'center', md: 'left' }}
+                            justifyContent={{ base: 'left', md: 'center' }}
                         >
-                            {project.tools.map((tec) => (
+                            {project.tools.map((tec: ToolsProps) => (
                                 <Flex
-                                    key={tec}
+                                    key={tec.id}
                                     bg="rgba(153, 153, 153, 0.2)"
-                                    w="120px"
                                     p="0.5rem"
                                     justifyContent="center"
                                     alignItems="center"
                                     borderRadius="10px"
+                                    gap="0.2rem"
                                 >
-                                    {tec}
+                                    {tec.svg}
+                                    <Text textAlign="start">{tec.name}</Text>
                                 </Flex>
                             ))}
                         </Flex>
