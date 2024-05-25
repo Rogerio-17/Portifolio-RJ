@@ -9,6 +9,20 @@ export const metadata: Metadata = {
     title: 'Portifolio RJ',
     description:
         'Portifolio para mostrar meus projetos, falar um pouco sobre mim e mostrar as tecnologias que estou por dentro.',
+    keywords: ['Portifolio', 'Rogerio', 'RJ', 'Desenvolvedor', 'Progrmador', 'Front-end'],
+    openGraph: {
+        images: [`${process.env.PROJECT_URL}/preview.png`],
+    },
+    robots: {
+        index: true,
+        follow: true,
+        nocache: true,
+        googleBot: {
+            index: true,
+            follow: true,
+            noimageindex: true,
+        },
+    },
 }
 
 export default function RootLayout({

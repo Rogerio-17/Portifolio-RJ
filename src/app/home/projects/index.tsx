@@ -38,8 +38,8 @@ export function Projets() {
                 marginBottom="0.5rem"
             ></Box>
             <Text textAlign={{ base: 'justify', md: 'center' }} marginBottom="1rem">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. A aliquam nihil quis odit
-                omnis et facere ab consectetur tempore doloribus.
+                Nesta seção, listarei alguns dos projetos que desenvolvi e estou desenvolvendo ao
+                longo da minha jornada de estudos na área.
             </Text>
 
             <Show above="md">
