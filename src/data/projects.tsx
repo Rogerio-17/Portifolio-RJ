@@ -17,18 +17,15 @@ export const projects = [
         id: '1',
         name: 'Ignite Shop',
         imgUrl: ignite.src,
-        description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eius
-        perspiciatis, non provident saepe nesciunt officia veritatis qui id tempore.
-        Suscipit saepe quod ea eius natus, cum vel reiciendis quibusdam! Lorem ipsum
-        dolor sit amet consectetur adipisicing elit. Ipsum sunt corporis dolore non
-        enim illo veritatis itaque tenetur neque? Impedit quos excepturi maxime
-        dicta architecto placeat quis sed minus iure. Lorem, ipsum dolor sit amet
-        consectetur adipisicing elit. Nulla maxime alias soluta doloremque, odit
-        aliquam ipsam, debitis vero sunt veniam quasi ducimus accusantium facilis,
-        nisi sequi nihil unde quis eius! Lorem ipsum dolor sit amet consectetur,
-        adipisicing elit. Id, eos praesentium. Sequi dolor reprehenderit laudantium
-        provident, libero nihil voluptatibus pariatur ratione facilis culpa animi
-        molestias repudiandae! Quae architecto voluptate harum?`,
+        description: `Esse projeto foi desenvolvido em uma trilha de React da Rocketseat. 
+        O objetivo do projeto foi apresentar o framework Next.js e todas as suas vantagens. 
+        Este projeto simula um e-commerce de roupas, onde é possível selecionar 
+        os itens e a quantidade desejada. Após isso, ao finalizar a compra, o usuário 
+        é redirecionado para a página de pagamento do Stripe. Após inserir as informações 
+        bancárias e confirmar a transação, o usuário é direcionado para uma página de 
+        agradecimento. Este projeto, por ser um desafio, exigiu bastante raciocínio para 
+        a resolução de problemas e proporcionou a oportunidade de praticar amplamente o 
+        que foi aprendido ao longo do curso.`,
         tools: [
             {
                 id: 3,
@@ -68,16 +65,13 @@ export const projects = [
         id: '2',
         name: 'Coffe Delivery',
         imgUrl: coffeDelivery.src,
-        description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eius
-        perspiciatis, non provident saepe nesciunt officia veritatis qui id tempore.
-        Suscipit saepe quod ea eius natus, cum vel reiciendis quibusdam! Lorem ipsum
-        dolor sit amet consectetur adipisicing elit. Ipsum sunt corporis dolore non
-        enim illo veritatis itaque tenetur neque? Impedit quos excepturi maxime
-        dicta architecto placeat quis sed minus iure. Lorem, ipsum dolor sit amet
-        consectetur adipisicing elit. Nulla maxime alias soluta doloremque, odit
-        aliquam ipsam, debitis vero sunt veniam quasi ducimus accusantium facilis,
-        nisi sequi nihil unde quis eius! Lorem ipsum dolor sit amet consectetur,
-        adipisicing elit. Id, eos praesentium. `,
+        description: `
+        O Coffee Delivery foi um dos primeiros projetos desenvolvidos no curso completo de desenvolvedor front-end da Rocketseat. 
+        Este projeto também faz parte de um desafio do segundo módulo do curso. Ele simula a página de uma cafeteria, 
+        permitindo que o cliente visualize, selecione os cafés e até mesmo faça uma solicitação de pedido, 
+        tudo através da página web. Esse projeto foi feito com React e exercitou muito a parte de hooks, 
+        especialmente a Context API do React.
+        `,
         tools: [
             {
                 id: 3,
