@@ -66,7 +66,7 @@ export function Header() {
                                     transition: 'filter 0.3s ease',
                                 }}
                             >
-                                Contatos
+                                Contato
                             </Link>
                         </Flex>
 
@@ -169,7 +169,7 @@ export function Header() {
                                         href="/#contacts"
                                         onClick={onClose}
                                     >
-                                        Contatos
+                                        Contato
                                     </Link>
                                 </DrawerBody>
                             </DrawerContent>

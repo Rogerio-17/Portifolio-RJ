@@ -75,7 +75,7 @@ export function Contact() {
             w={{ base: '95vw', md: '40vw' }}
             marginTop="3rem"
         >
-            <Heading fontWeight="bold">Contatos</Heading>
+            <Heading fontWeight="bold">Contato</Heading>
             <Box
                 w="45px"
                 h="8px"
@@ -85,8 +85,8 @@ export function Contact() {
                 marginBottom="0.5rem"
             ></Box>
             <Text textAlign={{ base: 'justify', md: 'center' }}>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. A aliquam nihil quis odit
-                omnis et facere ab consectetur tempore doloribus.
+                Sinta-se à vontade para entrar em contato comigo respondendo o formulário abaixo e
+                entrarei em contato com você o mais breve possível
             </Text>
 
             <FormControl

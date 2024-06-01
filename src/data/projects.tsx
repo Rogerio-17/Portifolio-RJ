@@ -106,16 +106,12 @@ export const projects = [
         id: '3',
         name: 'NLW-expert',
         imgUrl: nlwExpert.src,
-        description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eius
-        perspiciatis, non provident saepe nesciunt officia veritatis qui id tempore.
-        Suscipit saepe quod ea eius natus, cum vel reiciendis quibusdam! Lorem ipsum
-        dolor sit amet consectetur adipisicing elit. Ipsum sunt corporis dolore non
-        enim illo veritatis itaque tenetur neque? Impedit quos excepturi maxime
-        dicta architecto placeat quis sed minus iure. Lorem, ipsum dolor sit amet
-        consectetur adipisicing elit. Nulla maxime alias soluta doloremque, odit
-        aliquam ipsam, debitis vero sunt veniam quasi ducimus accusantium facilis,
-        nisi sequi nihil unde quis eius! Lorem ipsum dolor sit amet consectetur,
-        adipisicing elit. Id, eos praesentium. `,
+        description: `Este projeto foi criado em conjunto com um evento da Rocketseat. 
+          O mesmo foi desenvolvido com o intuito de salvar algumas anotações, sejam elas
+          descritas por texto ou até mesmo por áudio. Para fazer a transcrição por áudio, 
+          utilizamos uma API do próprio Google que escuta e transcreve o texto para a aplicação
+          de forma bastante precisa. A aplicação tem como foco principal o front-end, 
+          mas também aborda conceitos de back-end`,
         tools: [
             {
                 id: 3,
@@ -150,16 +146,15 @@ export const projects = [
         id: '4',
         name: 'Ignite Timer',
         imgUrl: igniteTimer.src,
-        description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eius
-        perspiciatis, non provident saepe nesciunt officia veritatis qui id tempore.
-        Suscipit saepe quod ea eius natus, cum vel reiciendis quibusdam! Lorem ipsum
-        dolor sit amet consectetur adipisicing elit. Ipsum sunt corporis dolore non
-        enim illo veritatis itaque tenetur neque? Impedit quos excepturi maxime
-        dicta architecto placeat quis sed minus iure. Lorem, ipsum dolor sit amet
-        consectetur adipisicing elit. Nulla maxime alias soluta doloremque, odit
-        aliquam ipsam, debitis vero sunt veniam quasi ducimus accusantium facilis,
-        nisi sequi nihil unde quis eius! Lorem ipsum dolor sit amet consectetur,
-        adipisicing elit. Id, eos praesentium. `,
+        description: `Projeto teoricamente bem simples, porém foi muito utilizado 
+        para treinar a parte de hooks do React. Ele simula um cronômetro, uma espécie
+        de pomodoro em que podemos dar nome à tarefa que vamos realizar e adicionar
+        o tempo. A partir desse tempo, começa uma contagem decrescente. Podemos
+        parar o cronômetro quando quisermos. Além disso, este projeto também
+        disponibiliza um relatório com a quantidade de tarefas, nome, tempo
+        de duração, data de início e o status. Projeto bastante funcional,
+        principalmente para quem gosta de usar a técnica do pomodoro, que
+        detalha tudo o que foi feito durante o dia através do relatório citado.`,
         tools: [
             {
                 id: 3,
@@ -194,16 +189,14 @@ export const projects = [
         id: '5',
         name: 'Blog Pessoal',
         imgUrl: blogPessoal.src,
-        description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eius
-        perspiciatis, non provident saepe nesciunt officia veritatis qui id tempore.
-        Suscipit saepe quod ea eius natus, cum vel reiciendis quibusdam! Lorem ipsum
-        dolor sit amet consectetur adipisicing elit. Ipsum sunt corporis dolore non
-        enim illo veritatis itaque tenetur neque? Impedit quos excepturi maxime
-        dicta architecto placeat quis sed minus iure. Lorem, ipsum dolor sit amet
-        consectetur adipisicing elit. Nulla maxime alias soluta doloremque, odit
-        aliquam ipsam, debitis vero sunt veniam quasi ducimus accusantium facilis,
-        nisi sequi nihil unde quis eius! Lorem ipsum dolor sit amet consectetur,
-        adipisicing elit. Id, eos praesentium. `,
+        description: `Este projeto tem como principal funcionalidade trazer dados da API do GitHub. 
+        Neste projeto, foi criado uma espécie de blog onde são usadas as issues do GitHub para 
+        adicionar mais cards. A partir da API, são obtidas algumas informações, como nome de usuário, 
+        empresa atual (de acordo com o que está no GitHub), número de seguidores, descrição e as principais
+        informações que vêm através de um repositório específico. Esse repositório foi criado justamente para
+        que, quando uma issue for criada, isso se reflita na página. Além da parte de listagem, o site também
+        tem a opção de pesquisa e uma página para detalhamento de posts que podem conter markdown, que a página
+        vai entender e formatar corretamente.`,
         tools: [
             {
                 id: 3,
@@ -231,7 +224,7 @@ export const projects = [
                 svg: <GitHubIcon w="22px" h="22px" color="#000" />,
             },
         ],
-        linkRepository: 'https://github.com/Rogerio-17/coffe-delivery',
+        linkRepository: 'https://github.com/Rogerio-17/BlogPessoal.git',
         linkDeploy: '',
     },
 
