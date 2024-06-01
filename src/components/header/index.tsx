@@ -65,6 +65,7 @@ export function Header() {
                                     filter: 'brightness(0.90)',
                                     transition: 'filter 0.3s ease',
                                 }}
+                                href="/#contact"
                             >
                                 Contato
                             </Link>
@@ -166,7 +167,7 @@ export function Header() {
                                             filter: 'brightness(0.90)',
                                             transition: 'filter 0.3s ease',
                                         }}
-                                        href="/#contacts"
+                                        href="/#contact"
                                         onClick={onClose}
                                     >
                                         Contato

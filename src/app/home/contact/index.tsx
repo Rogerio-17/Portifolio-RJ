@@ -67,7 +67,7 @@ export function Contact() {
         <Flex
             as="form"
             onSubmit={handleSubmit(handleSendEmail)}
-            id="contacts"
+            id="contact"
             flexDirection="column"
             alignItems="center"
             margin="auto"
