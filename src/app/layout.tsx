@@ -4,6 +4,7 @@ import { Providers } from './providers'
 import Head from 'next/head'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/header'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 
 export const metadata: Metadata = {
     title: 'Portifolio RJ',
@@ -40,6 +41,7 @@ export default function RootLayout({
                     <Header />
                     {children}
                     <Footer />
+                    <SpeedInsights />
                 </Providers>
             </body>
         </html>
