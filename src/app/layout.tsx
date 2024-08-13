@@ -8,10 +8,10 @@ import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 
 export const metadata: Metadata = {
-    title: 'Portifolio RJ',
+    title: 'Portifolio RJ | Desenvolvedor Front-end',
     description:
-        'Portifolio para mostrar meus projetos, falar um pouco sobre mim e mostrar as tecnologias que estou por dentro.',
-    keywords: ['Portifolio', 'Rogerio', 'RJ', 'Desenvolvedor', 'Progrmador', 'Front-end'],
+        'Portfólio de Rogério, mostrando projetos, habilidades e tecnologias dominadas no desenvolvimento Front-end.',
+    keywords: ['Portfólio', 'Rogério', 'RJ', 'Desenvolvedor', 'Programador', 'Front-end'],
     openGraph: {
         images: [`${process.env.PROJECT_URL}/preview.png`],
     },

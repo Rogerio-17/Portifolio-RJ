@@ -47,7 +47,7 @@ export default function ProjectDetails({ searchParams }: ProjectDetailsProps) {
                 gap="0.5rem"
                 borderRadius="8px"
                 w="5rem"
-                fontSize={{ base: '1rem', md: '1.2rem' }}
+                fontSize={{ base: '0.8rem', md: '1rem' }}
                 href="/"
             >
                 <ArrowLeftIcon w="22px" h="22px" /> Voltar
@@ -113,11 +113,13 @@ export default function ProjectDetails({ searchParams }: ProjectDetailsProps) {
                     gap={{ base: '1.5rem', md: '3rem' }}
                     marginBottom="3rem"
                 >
-                    <Flex flexDirection="column" gap="1rem">
+                    <Flex
+                        flexDirection="column"
+                        gap="1rem"
+                        fontSize={{ base: '0.8rem', md: '1rem' }}
+                    >
                         <Heading>{project.name}</Heading>
-                        <Text fontSize="1.2rem" textAlign="justify">
-                            {project.description}
-                        </Text>
+                        <Text textAlign="justify">{project.description}</Text>
                     </Flex>
 
                     <Flex flexDirection="column" gap={{ base: '0.5rem', md: '1rem' }}>

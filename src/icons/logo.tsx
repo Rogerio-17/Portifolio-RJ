@@ -320,8 +320,8 @@ export function LogoIcon(props: IconProps) {
                 d="M 0.000296956 1.001485 L 105.405734 1.001485 "
                 stroke="#fff"
                 strokeWidth="1"
-                stroke-opacity="1"
-                stroke-miterlimit="4"
+                strokeOpacity="1"
+                strokeMiterlimit="4"
             />
         </Icon>
     )
