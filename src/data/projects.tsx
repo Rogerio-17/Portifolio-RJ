@@ -3,6 +3,7 @@ import coffeDelivery from '@/assets/coffe_delivery.png'
 import nlwExpert from '@/assets/nlw_expert.png'
 import igniteTimer from '@/assets/ignite_timer.png'
 import blogPessoal from '@/assets/blog_pessoal.png'
+import belezaNordestina from '@/assets/beleza_nordestina.png'
 import { TsIcon } from '@/icons/typeScripts'
 import { NextJsIcon } from '@/icons/nextJs'
 import { NodeJsIcon } from '@/icons/nodeJs'
@@ -11,6 +12,7 @@ import { RadixUiIcon } from '@/icons/radixUi'
 import { GitHubIcon } from '@/icons/github'
 import { ReactIcon } from '@/icons/react'
 import { TailwindCssIcon } from '@/icons/tailwindCss'
+import { FirebaseIcon } from '@/icons/firebaseIcon'
 
 export const projects = [
     {
@@ -230,11 +232,37 @@ export const projects = [
 
     {
         id: '6',
-        name: 'Em breve!',
-        imgUrl: '',
-        description: `Em breve`,
-        tools: [],
-        linkRepository: '',
-        linkDeploy: '',
+        name: 'Beleza Nordestina',
+        imgUrl: belezaNordestina.src,
+        description: `Este projeto surgiu de uma conversa com minha irmã, que possui uma loja de produtos de beleza. A principal dificuldade dela é a falta de tempo para postar produtos nas redes sociais e organizar os pedidos. Pensando nisso, criei uma plataforma onde ela pode cadastrar os produtos, adicionar fotos, e os clientes têm acesso a esses itens na tela principal. Quando o cliente finaliza uma compra, o estoque é automaticamente recalculado. Se o produto estiver esgotado, o cliente terá a opção de fazer um pedido, mesmo sem estoque disponível. Atualmente, todo o processo de finalização de compras e pedidos está sendo realizado diretamente pelo WhatsApp corporativo da minha irmã. No entanto, já estamos planejando o fluxo para criar um sistema de login, visando um melhor controle e identificação dos nossos clientes. Além disso, os clientes poderão fazer comentários e avaliar os produtos com estrelas, sendo que cada item exibirá a média de avaliações e os comentários feitos por outros usuários. A plataforma já possui as funcionalidades essenciais para ajudar minha irmã no dia a dia, e estamos continuamente avançando para incluir novas funcionalidades. O próximo passo é implementar o fluxo de login, garantindo uma maior proteção dos dados dos nossos futuros clientes.`,
+        tools: [
+            {
+                id: 3,
+                name: 'TypeScript',
+                svg: <TsIcon w="22px" h="22px" />,
+            },
+            {
+                id: 5,
+                name: 'Next JS',
+                svg: <NextJsIcon w="22px" h="22px" />,
+            },
+            {
+                id: 9,
+                name: 'Node JS',
+                svg: <NodeJsIcon w="22px" h="22px" color="#8CC84B" />,
+            },
+            {
+                id: 10,
+                name: 'Github',
+                svg: <GitHubIcon w="22px" h="22px" color="#000" />,
+            },
+            {
+                id: 11,
+                name: 'Firebase',
+                svg: <FirebaseIcon w="22px" h="22px" />,
+            },
+        ],
+        linkRepository: 'https://github.com/Rogerio-17/beleza_nordestina_web',
+        linkDeploy: 'https://belezanordestinarn.com.br',
     },
 ]
