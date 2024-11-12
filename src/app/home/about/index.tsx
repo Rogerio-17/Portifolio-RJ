@@ -36,11 +36,9 @@ export default function About() {
                                 Meu nome é Rogério e atualmente trabalho como{' '}
                                 <Text as="span" fontWeight="bold">
                                     {' '}
-                                    desenvolvedor front-end
+                                    desenvolvedor full-stack
                                 </Text>{' '}
-                                na BuildCode, uma empresa local da minha cidade. Estou na área desde
-                                fevereiro de 2024 e, no meu dia a dia, utilizo a linguagem de
-                                programação
+                                na BuildCode, no meu dia a dia, utilizo a linguagem de programação
                                 <Text as="span" fontWeight="bold">
                                     {' '}
                                     TypeScript
@@ -55,14 +53,23 @@ export default function About() {
                                     {' '}
                                     Chakra UI
                                 </Text>{' '}
+                                e para o front-end, e{' '}
+                                <Text as="span" fontWeight="bold">
+                                    {' '}
+                                    NodeJS
+                                </Text>
+                                ,
+                                <Text as="span" fontWeight="bold">
+                                    {' '}
+                                    Prisma
+                                </Text>{' '}
                                 e{' '}
                                 <Text as="span" fontWeight="bold">
                                     {' '}
-                                    GitHub
-                                </Text>
-                                . Busco constantemente aprimorar meus conhecimentos em front-end,
-                                mas no futuro próximo, pretendo expandir meus estudos para a área de
-                                back-end também.
+                                    NestJS
+                                </Text>{' '}
+                                para o back-end. Busco constantemente aprimorar meus conhecimentos
+                                técnicos e habilidades interpessoais.
                             </Text>
                         </Flex>
                     </Flex>

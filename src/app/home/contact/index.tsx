@@ -43,8 +43,6 @@ export function Contact() {
         formState: { errors },
     } = confirmOrderForm
 
-    console.log(process.env.PUBLIC_KEY_TEMPLATE_EMAIL)
-
     function handleSendEmail(data: ConfirmOrderForm) {
         const templateParams = {
             from_name: data.personalData.name,

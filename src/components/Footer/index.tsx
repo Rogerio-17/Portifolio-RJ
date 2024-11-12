@@ -31,7 +31,7 @@ export function Footer() {
                             w={{ base: '13rem', md: '22rem' }}
                             textAlign="justify"
                         >
-                            Um desenvolvedor web focado no front end, transformando ideias em
+                            Um desenvolvedor web focado no full-stack, transformando ideias em
                             experiências digitais memoráveis, uma linha de código por vez.{' '}
                         </Text>
 
@@ -75,7 +75,7 @@ export function Footer() {
                     borderTop="2px solid rgba(153, 153, 153, 0.438)"
                 >
                     <Text fontSize="0.8rem">
-                        © Direitos Autorais 2024. Feito por{' '}
+                        © Direitos Autorais {new Date().getFullYear()}. Feito por{' '}
                         <Link href="/#home" textDecoration="underline !important">
                             Rogério José
                         </Link>

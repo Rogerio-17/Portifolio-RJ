@@ -33,7 +33,7 @@ export default function ContentHome() {
                     >
                         Rogerio José
                     </Text>
-                    <Text fontSize="1.2rem">Desenvolvedor front-end</Text>
+                    <Text fontSize="1.2rem">Desenvolvedor full-stack</Text>
                     <Flex gap="1rem">
                         <Link
                             as={NextLink}

@@ -10,7 +10,6 @@ interface ParticlProsps {
 export default function Particle({ isMobile }: ParticlProsps) {
     const [init, setInit] = useState(false)
     useEffect(() => {
-        console.log('init')
         initParticlesEngine(async (engine: any) => {
             await loadFull(engine)
         }).then(() => {

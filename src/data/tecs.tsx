@@ -2,8 +2,10 @@ import { ChakraUiIcon } from '@/icons/chakraUi'
 import { CssIcon } from '@/icons/css'
 import { GitHubIcon } from '@/icons/github'
 import { HtmlIcon } from '@/icons/html'
+import { NestJsIcon } from '@/icons/NestJs'
 import { NextJsIcon } from '@/icons/nextJs'
 import { NodeJsIcon } from '@/icons/nodeJs'
+import { PrismaIcon } from '@/icons/Prisma'
 import { RadixUiIcon } from '@/icons/radixUi'
 import { ReactIcon } from '@/icons/react'
 import { StyledComponentsIcon } from '@/icons/styledComponents'
@@ -67,5 +69,17 @@ export const Tecs = [
         id: 11,
         name: 'Node JS',
         svg: <NodeJsIcon w="22px" h="22px" color="#8CC84B" />,
+    },
+
+    {
+        id: 12,
+        name: 'Nest JS',
+        svg: <NestJsIcon w="22px" h="22px" color="#8CC84B" />,
+    },
+
+    {
+        id: 13,
+        name: 'Prisma',
+        svg: <PrismaIcon w="22px" h="22px"  />,
     },
 ]
